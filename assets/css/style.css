@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: NanumBarunGothic;
+  src: url('../fonts/NanumBarunGothic.ttf');
+}
+@font-face {
+  font-family: Archer Semibold;
+  src: url('../fonts/Archer Semibold.otf');
+}
+
+/* 레이아웃 */
+.container {
+	/*position: relative;*/
+	width: 1220px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+}
+
+#header {
+	width: 100%;
+	background: rgba(0, 0, 0, 0);
+}
+
+#banner {}
+
+#product {}
+
+
+
+
+/* 헤더 */
+.top_menu {
+	height: 40px;
+	background: rgb(238,238,238);
+}
+
+.top_menu ul {
+	float: right;
+}
+
+.top_menu li {
+	float: left;
+}
+
+.top_menu li a {
+	display: block;
+	font-family: 'NanumBarunGothic';
+	font-size: 14px;
+	color: rgb(51,51,51);
+	line-height: 40px;
+	margin-right: 18px;
+}
+
+.top_menu li:first-child a {
+	border-right: 1px solid rgb(228,228,228);
+	padding-right: 18px;
+}
+
+.top_menu li.top_menu_logo {
+	width: 60px;
+}
+
+.top_menu li.top_menu_logo a {
+	background: rgb(47,28,17);
+	text-align: center;
+	margin-right: 0;
+}
+
+.top_menu li.top_menu_logo a img {
+	vertical-align: middle;
+	width: 21px;
+	height: 21px;
+
+}
+
+
+
+.sub_menu {
+	height: 100px;
+}
+
+.sub_menu h1.sub_menu_logo {
+	float: left;
+	padding: 13px 0;
+	margin-right: 130px;
+}
+
+.sub_menu .sub_menu_logo img {
+	height: 70px;
+	width: 70px;
+}
+
+.sub_menu .sub_text_box {
+	font-family: 'Arial';
+	float: left;
+}
+
+.sub_menu .sub_text_box ul {
+	overflow: hidden;
+}
+
+.sub_menu .sub_text_box ul li {
+	float: left;
+	padding: 0 31px;
+}
+
+.sub_menu .sub_text_box ul li a {
+	display: block;
+	line-height: 100px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.3px
+}
+
+.sub_menu .sub_text_box ul li a:hover {
+	color: rgb(207, 102, 26);
+}
+
+.sub_menu .sub_search_box {
+	float: right;
+}
+
+.sub_menu .sub_search_box a {
+	line-height: 100px;
+}
+
+.sub_menu .sub_search_box img {
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+
+
+
+
+/* 배너 */
+
+.main {
+	height: 540px;
+	width: 100%;
+	background: url('../img/main_5.jpg') no-repeat center center;
+}
+
+.slider {
+	height: 400px;
+	width: 100%;
+}
+
+
+
+.main2 .event_ban1 {
+	background: url('../img/1313.jpg') no-repeat center center;
+	/*-webkit-background-size: cover;
+    background-size: cover;*/
+}
+
+.main2 .event_ban2 {
+	background: url('../img/main02_03.jpg') no-repeat center center;
+	/*-webkit-background-size: cover;
+    background-size: cover;*/
+}
+
+/* 스와이퍼 버튼 변경 */
+.swiper-button-prev {background-image: url('../img/icons/btn_prev.png') !important;}
+.swiper-button-next {background-image: url('../img/icons/btn_next.png') !important;}
+
+
+
+
+
+/* 상품 */
+.product {margin: 50px 0;}
+.product .md {width: 100%; overflow: hidden; margin-bottom: 55px;}
+.product .md h2 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: rgb(207,102,26); text-align: center; margin-bottom: 30px;}
+.product .md .swiper-container2 {}
+.product .md .swiper-wrapper {margin-bottom: 40px;}
+.product .md .swiper-slide {}
+.product .md .swiper-slide a {position: relative; display: inline-block}
+.product .md .swiper-slide a:hover button {
+	display: block;
+}
+.product .md .swiper-slide figure {
+	text-align: center; 
+}
+.product .md .swiper-slide img {
+	-webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.product .md .swiper-slide figure:hover img {opacity: 0.6;}
+.product .md .swiper-slide button {
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	width: 200px; height: 40px;
+	font-family: 'Archer Semibold','NanumBarunGothic';
+	background: rgb(243,130,0); 
+	color: #fff; font-size: 14px;
+}
+
+.product .md .swiper-slide .info {text-align: center;}
+.product .md .info {padding: 10px 0;}
+.product .md .info h3 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 18px; font-weight: 600; margin-bottom: 10px;}
+.product .md .info p {font-family: 'Arial','NanumBarunGothic'; font-size: 14px; margin-bottom: 10px;}
+.product .md .info span {font-family: 'NanumBarunGothic'; font-size: 14px; color: rgb(207,102,26);}
+
+.swiper-paging-box {text-align: center;}
+.swiper-paging-box .swiper-pagination2 {display: inline-block; text-align: center;}
+.swiper-paging-box .swiper-pagination-bullet:first-child {margin-left: 15px;}
+.swiper-paging-box .swiper-pagination-bullet {
+	width: 15px !important;
+	height: 15px !important;
+	margin-right: 10px;
+	vertical-align: -1px;
+}
+.swiper-paging-box .control-btn {position: relative; display: inline-block; padding-right: 35px;}
+.swiper-paging-box .control-btn:after {content: ''; position: absolute; width: 2px; height: 85%; background: #eeeeee; top: 1px; right: 10px;}
+
+
+.product .new h2 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: rgb(207,102,26); text-align: center; margin-bottom: 30px;}
+
+/*===================== 미디어 쿼리 =====================*/
+@media (max-width: 1200px) {
+	.container {width: 100%;}
+	.top_menu {display: none;}
+
+	.sub_menu {height: 60px;}
+	.sub_menu .sub_text_box ul {display: none;}
+	.sub_menu .sub_search_box {display: none;}
+
+	.sub_menu h1.sub_menu_logo {padding: 10px 0;}
+	.sub_menu .sub_menu_logo img {display: block; width: 40px; height: 40px;}
+}
+
+
+@media (max-width: 768px) {
+	
+}
