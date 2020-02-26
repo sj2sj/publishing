@@ -11,22 +11,30 @@
 
 /* 레이아웃 */
 .container {
-	/*position: relative;*/
+	position: relative;
 	width: 1220px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0);
 }
 
 #header {
+	position: fixed;
+	left: 0;
+	top: 0;
 	width: 100%;
-	background: rgba(0, 0, 0, 0);
+	z-index: 1000;
 }
 
 #banner {}
 
 #product {}
 
+#sns {background: rgb(124,81,161); padding: 35px 5px;}
 
+#footer {
+	background: rgb(226,226,226);
+	padding-bottom: 20px;
+}
 
 
 /* 헤더 */
@@ -78,6 +86,7 @@
 
 .sub_menu {
 	height: 100px;
+	background: #fff;
 }
 
 .sub_menu h1.sub_menu_logo {
@@ -170,7 +179,7 @@
 
 
 
-/* 상품 */
+/* md 상품 */
 .product {margin: 50px 0;}
 .product .md {width: 100%; overflow: hidden; margin-bottom: 55px;}
 .product .md h2 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: rgb(207,102,26); text-align: center; margin-bottom: 30px;}
@@ -216,11 +225,129 @@
 	margin-right: 10px;
 	vertical-align: -1px;
 }
-.swiper-paging-box .control-btn {position: relative; display: inline-block; padding-right: 35px;}
-.swiper-paging-box .control-btn:after {content: ''; position: absolute; width: 2px; height: 85%; background: #eeeeee; top: 1px; right: 10px;}
+.swiper-paging-box .control-btn
+, .swiper-paging-box .control-btn2 {position: relative; display: inline-block; padding-right: 35px;}
+.swiper-paging-box .control-btn:after
+, .swiper-paging-box .control-btn2:after
+{content: ''; position: absolute; width: 2px; height: 85%; background: #eeeeee; top: 1px; right: 10px;}
 
 
 .product .new h2 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: rgb(207,102,26); text-align: center; margin-bottom: 30px;}
+
+
+
+
+/* new 상품 */
+.new {width: 100%; overflow: hidden; margin-bottom: 55px;}
+
+.new .swiper-wrapper {margin-bottom: 40px;}
+.new .new_info {text-align: center; padding: 10px 0;}
+.new .new_info h3 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 18px; font-weight: 600; margin-bottom: 10px; color: rgb(207,102,26); }
+
+.swiper-paging-box .swiper-pagination3 {display: inline-block; text-align: center;}
+
+
+
+
+
+/* sns */
+#sns .container {width: 1200px;}
+#sns h2 {
+	font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: #fff;
+	text-align: center; padding: 20px 0;
+}
+.sns {text-align: center;}
+.sns ul {overflow: hidden; font-size: 0; margin-bottom: 30px;}
+.sns ul a {display: block;
+}
+
+.sns ul a:hover img {
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	opacity: 0.8;
+}
+.sns ul li {float: left; font-size: 0; overflow: hidden;}
+.sns img {width: 200px;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;}
+
+.sns .instagram_btn {
+	font-family: 'Archer Semibold','NanumBarunGothic';
+	background: rgb(243,130,0);
+	color: #fff;
+	padding: 10px 50px;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+
+
+/* 푸터 */
+.footer_menu {overflow: hidden; padding: 55px 0 30px 0;}
+.footer_menu .row {border-bottom: 1px solid rgb(75,38,22); padding-bottom: 50px;}
+.footer_menu ul {float: left; width: 16.66666666666667%;}
+.footer_menu ul li {
+	display: block;
+	margin-bottom: 2px;
+}
+.footer_menu ul li:first-child {
+	font-family: 'Archer Semibold','NanumBarunGothic';
+	font-size: 18px;
+	color: rgb(207,102,26);
+	margin-bottom: 10px;
+}
+.footer_menu ul li a {
+	font-family: 'NanumBarunGothic';
+	font-size: 13px;
+	color: rgb(75,38,22);
+}
+.footer_menu ul li a.bold {font-weight: 600;}
+
+
+.footer_info ul li {
+	font-family: 'NanumBarunGothic';
+	font-size: 13px;
+	position: relative; 
+	display: inline-block;
+	margin-right: 13px;
+	color: rgb(95,77,63);
+}
+.footer_info ul li a {
+	font-family: 'NanumBarunGothic';
+	color: rgb(95,77,63);
+	font-size: 13px;
+}
+.footer_info ul li a.orange {color: rgb(207,102,26);}
+.footer_info ul li:after {
+	content: ''; position: absolute; 
+	top: 2px; right: -8px; width: 1px; height: 13px; background: rgb(95,77,63);
+}
+.footer_info ul li:last-child:after {width: 0; height: 0;}
+.footer_info div > div > ul {margin-bottom: 15px;}
+
+.footer_info address ul {
+	padding-bottom: 3px;
+}
+.footer_info address p {
+	font-family: 'NanumBarunGothic';
+	color: rgb(95,77,63);
+	font-size: 13px;
+	margin-bottom: 3px;
+}
+
+.sns_ico {position: absolute; top: -120px; right: 0;}
+.footer_sns ul li {display: inline-block; margin-right: 8px;}
+.footer_sns ul li a img {width: 40px; height: 40px;}
+
+
+
 
 /*===================== 미디어 쿼리 =====================*/
 @media (max-width: 1200px) {
