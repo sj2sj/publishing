@@ -31,7 +31,12 @@
 						<li><a href="#">채용정보</a></li>
 						<li><a href="#">단체 및 기업구매</a></li>
 						<li><a href="#">고객서비스</a></li>
-						<li class="top_menu_logo"><a href="#"><img src="assets/img/icons/ico_user_info_line.png" alt="회원 정보"></a></li>
+						<li class="top_menu_logo">
+							<a href="#">
+							<img class="user_info_img" src="assets/img/icons/ico_user_info_line.png" alt="회원 정보">
+							<img class="m_user_info_img"src="assets/img/icons/ico_user_info_w_off_m.png" alt="회원 정보">
+							</a>
+						</li>
 						<li class="top_menu_cart"><a href="#"><img src="assets/img/icons/ico_bag_m.png" alt="장바구니"></a></li>
 					</ul>
 				</div>
@@ -43,8 +48,11 @@
 		<nav class="sub_menu">
 			<div class="container">
 				<div class="row clearfix">
+					<a class="menu_btn" href="#">
+						<img src="assets/img/icons/btn_menu.svg" alt="메뉴">
+					</a>
 					<h1 class="sub_menu_logo">
-						<a href="#"> <img src="assets/img/icons/logo.png" alt="COFFEE BEAN"> </a>
+						<a href="#"> <img src="assets/img/icons/logo.svg" alt="COFFEE BEAN"> </a>
 					</h1>
 					
 					<!-- sub_text_box -->
@@ -847,6 +855,14 @@
 		    	delay: 5000
 		    },
 		    speed: 2800,
+
+		    breakpoints: {
+		    	1200: {
+		    		slidesPerView: 3,
+				    slidesPerGroup : 3,
+				    spaceBetween: 20
+		    	}
+		    }
 		});
 
 
@@ -862,6 +878,13 @@
 		    	delay: 5000
 		    },
 		    speed: 2800,
+		    breakpoints: {
+		    	1200: {
+		    		slidesPerView: 2,
+				    slidesPerGroup : 2,
+				    spaceBetween: 30
+		    	}
+		    }
 		 });
 
 	    
