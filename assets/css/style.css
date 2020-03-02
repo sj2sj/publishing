@@ -34,7 +34,7 @@
 
 #product {}
 
-#sns {background: rgb(124,81,161); padding: 35px 5px;}
+#sns {background: rgb(124,81,161);}
 
 #footer {
 	background: rgb(226,226,226);
@@ -90,6 +90,7 @@
 }
 
 .top_menu li.top_menu_cart {
+	position: relative;
 	display: none;
 	width: 60px;
 }
@@ -98,6 +99,17 @@
 	vertical-align: middle;
 	width: 21px;
 	height: 21px;
+}
+.top_menu li.top_menu_cart a .cart_num {
+	position: absolute;
+	top: 16px; right: 11px;
+	display: block;
+	background: rgb(242, 148, 69);
+	color: #fff;
+	border-radius: 50%;
+	width: 15px; height: 15px;
+	font-family: 'Arial'; font-size: 10px; line-height: 15px;
+	text-align: center;
 }
 
 
@@ -284,8 +296,12 @@
 /* 배너 */
 
 .main {
-	height: 540px;
 	width: 100%;
+}
+
+.main a {
+	height: 540px;
+	display: block;
 	background: url('../img/메인_최종.jpg') no-repeat center center;
 }
 
@@ -296,13 +312,18 @@
 
 
 
-.main2 .event_ban1 {
+
+.main2 .event_ban1 a {
+	display: block;
+	height: 400px;
 	background: url('../img/1313.jpg') no-repeat center center;
 	/*-webkit-background-size: cover;
     background-size: cover;*/
 }
 
-.main2 .event_ban2 {
+.main2 .event_ban2 a {
+	display: block;
+	height: 400px;
 	background: url('../img/main02_03.jpg') no-repeat center center;
 	/*-webkit-background-size: cover;
     background-size: cover;*/
@@ -322,11 +343,10 @@
 .product .md h2 {font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: rgb(207,102,26); text-align: center; margin-bottom: 30px;}
 .product .md .swiper-container2 {}
 .product .md .swiper-wrapper {margin-bottom: 40px;}
-.product .md .swiper-slide {}
-.product .md .swiper-slide a {position: relative; display: inline-block}
-.product .md .swiper-slide a:hover button {
+.product .md .swiper-slide:hover button {
 	display: block;
 }
+.product .md .swiper-slide a {position: relative; display: inline-block}
 .product .md .swiper-slide figure {
 	text-align: center; 
 }
@@ -402,6 +422,7 @@
 
 /* sns */
 #sns .container {width: 1200px;}
+#sns .row {padding: 35px 0;}
 #sns h2 {
 	font-family: 'Archer Semibold','NanumBarunGothic'; font-size: 24px; color: #fff;
 	text-align: center; padding: 20px 0;
@@ -514,7 +535,7 @@
 	}
 	.top_menu li {display: none;}
 	.top_menu li.top_menu_logo {display: block;}
-	.top_menu li.top_menu_logo a {background: #fff; width: 60px; height: 60px; line-height: 60px; text-align: right;}
+	.top_menu li.top_menu_logo a {background: #fff; width: 60px; height: 60px; line-height: 60px; text-align: center;}
 	.top_menu li.top_menu_logo a img.user_info_img {display: none;}
 	.top_menu li.top_menu_logo a img.m_user_info_img {display: inline-block; width: 25px; height: 25px;}
 	.top_menu li.top_menu_cart {display: block;}
@@ -529,27 +550,38 @@
 	.sub_menu h1.sub_menu_logo {padding: 10px 0; margin-right: 0; float: none; text-align: center;}
 	.sub_menu .sub_menu_logo img {width: 40px; height: 40px;}
 
-	.main {
+	.main a {
 		width: 100%; height: 0;
 		padding-top: calc(540 / 1900 * 100%);
 		background-size: cover;
+		-webkit-transition: all 0.5s;
+	    -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	    -o-transition: all 0.5s;
+	    transition: all 0.5s;
 	}
-	.main2 .event_ban1, .main2 .event_ban2 {
+	.main a:hover {
+		opacity: 0.8;
+	}
+	.main2 .event_ban1 a, .main2 .event_ban2 a {
+		position: relative;
 		width: 100%; height: 0;
-		padding-top: calc(540 / 1900 * 100%);
+		padding-top: calc(400 / 1900 * 100%);
 		background-size: cover;
 	}
 	.slider {height: auto;}
 
 
 
-
-
+	.product .md {
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
 	
 
 
 	#sns .container {width: 100%;}
-	#sns .row {padding: 0 15px;}
+	#sns .row {padding: 35px 20px;}
 	.sns ul li {width: 25%;}
 	.sns img {width: 100%;}
 
@@ -558,10 +590,44 @@
 	.sns_ico {position: static; text-align: center;}
 	.footer_info {text-align: center;}
 
-
 }
 
 
+
+
 @media (max-width: 768px) {
+	.main a {
+		background: url('../img/모바일 5종.jpg') no-repeat center center;
+		padding-top: calc(900 / 960 * 100%);
+		background-size: cover;
+	}
+
+	.main2 .event_ban1 a {
+		background: url('../img/MB_223_3.jpg') no-repeat center center;
+		padding-top: calc(376 / 600 * 100%);
+		background-size: cover;
+	}
+
+	.main2 .event_ban2 a {
+		background: url('../img/MB_223_4.jpg') no-repeat center center;
+		padding-top: calc(376 / 600 * 100%);
+		background-size: cover;
+	}
+
+	.product {margin: 35px 0;}
+	.product .md h2, .product .new h2 {font-size: 18px;}
+	.product .md .info h3 {font-size: 15px; margin-bottom: 0;}
+	.product .md .info p {display: none;}
+
+	.new .new_info {padding: 0;}
+	.new .swiper-wrapper {margin-bottom: 20px;}
 	
+	#sns .row {padding: 0 20px 30px 20px;}
+	#sns h2 {font-size: 20px;}
+	.sns ul li {width: 33.33%;}
+	.sns .instagram_btn {font-size: 13px; padding: 5px 50px;}
+
+	.footer_info address ul {padding-bottom: 0;}
+	.footer_info address ul li {display: block; margin-bottom: 5px;}
+	.footer_info address ul li:after {width: 0; height: 0;}
 }
