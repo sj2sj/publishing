@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+/* 레이아웃 */
+.container {
+	position: relative;
+	width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/*제거할것*/
+.testh {height: 5000px;}
+
+#header {height: 140px; background: #e040fb;}	
+
+
+/* 헤더 */
+.logo {position: relative; height: 90px; padding: 20px 0; box-sizing: border-box;}
+.logo a img {width: 132px; height: 50px;}
+
+.logo_text {position: absolute; top: 25px; left: 158px; display: inline-block;}
+.logo_text a img {width: 117px; height: 37px;}
+
+.logo_innogov {position: absolute; top: 25px; left: 300px; display: inline-block;}
+.logo_innogov a img {width: 97px; height: 44px;}
+
+
+.util_box {
+	position: absolute; top: 6px; right: 0; 
+	z-index: 10; height: 42px; line-height: 21px;
+}
+.util_box ul {overflow: hidden;}
+.util_box ul li {float: left; padding-right: 7px;}
+.util_box ul li:last-child {padding-right: 0;}
+.util_box ul li.bar {position: relative; margin-left: 13px;}
+.util_box ul li.bar:before {
+	content: '';
+	position: absolute; top: 6px; left: -14px;
+	width: 1px; height: 11px; background: #d3d3d3;
+}
+.util_box ul li span{font-weight: 300; color: #444; margin: 0 5px;}
+.util_box ul li img {width: auto; vertical-align: middle;}
+
+
+
+
+.search_box {
+	position: absolute; top: 40px; right: 0;
+	z-index: 10; width: 560px; height: 41px; 
+	border: 3px solid #053863; border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.search_box .s_form .search_text {
+	height: 35px; width: 100%; padding: 0 45px 0 10px; 
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.search_box .s_form .search_btn {
+	position: absolute; top: 0; right: 0;
+	width: 45px; height: 35px;
+	background: #053863 url('../img/icons/btn_search.png') no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== 미디어 쿼리 ===============*/
+/*=============== 미디어 쿼리 ===============*/
+/*=============== 미디어 쿼리 ===============*/
+/* 0~1290px */
+@media (max-width: 1420px) {
+    .container {width: 100%;}
+
+    .logo {left: 34px;}
+    .logo_text {left: 184px;}
+    .logo_innogov {left: 325px;}
+
+    .util_box {right: 33px;}
+    .search_box {right: 33px;}
+}
