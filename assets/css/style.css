@@ -8,13 +8,13 @@
 	position: relative;
 	width: 1400px;
     margin: 0 auto;
-    background: #fff;
 }
 
 /*제거할것*/
 .testh {height: 5000px;}
 
-#header {height: 140px; background: #e040fb;}	
+#header {height: 140px; background: url('../img/bg_header.gif');}	
+#article {height: 500px; background: url('../img/bg_main.png') no-repeat center; background-size: cover;}
 
 
 /* 헤더 */
@@ -69,7 +69,106 @@
 
 
 
+.gnb_box {background: rgb(0, 34, 63); height: 50px; line-height: 50px;}
+.gnb_box ul {overflow: hidden;}
+.gnb_box ul li {position: relative; float: left; width: 20%; text-align: center; margin-left: -10px;}
+.gnb_box ul li a {display: block; color: #fff; font-size: 20px; font-weight: 500; letter-spacing: -1px}
+.gnb_box ul li:after {
+	content: '';
+	position: absolute; top: 16px; right: 0;
+	width: 2px; height: 18px;
+	background: url('../img/icons/line_nav.png');
+}
+.gnb_box ul li:last-child:after {
+	width: 0; height: 0;
+}
+.gnb_box .sitemap {
+	position: absolute;
+	top: 0; right: 0;
+	width: 50px; height: 50px;
+	padding: 7px 14px 14px 14px;
+	box-sizing: border-box;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.gnb_box .sitemap:hover {
+	background: #e4012e;
+}
+.gnb_box .sitemap:hover span {
+	width: 22px;
+}
+.gnb_box .sitemap span:before {
+	content: ''; 
+	position: absolute; left: 0; bottom: -9px; 
+	width: 22px; height: 2px;
+	background: #fff;
+}
+.gnb_box .sitemap span {
+	position: relative; top:50%; 
+	display: block; 
+	width: 15px; height: 2px;
+	background: #fff;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.gnb_box .sitemap span:after {
+	content: '';
+	position: absolute; left: 0; top: -9px;
+	width: 22px; height: 2px;
+	background: #fff;
+}
 
+
+
+
+
+/* 메인 */
+.banner_box1 {float: left; width: 690px;}
+
+.service_box {
+	position: relative; float: left;
+ 	width: 690px; height: 360px; margin-left: 20px; 
+}
+.service_box h3 {
+	font-size: 20px; color: #003769; font-weight: 600; 
+	border-bottom: 2px solid #003769; padding-bottom: 20px;
+}
+#article .container {padding: 40px 0; box-sizing: border-box;}
+.service_box ul {overflow: hidden;}
+.service_box > ul > li {float: left;}
+.service_box ul li.public_tab {
+	
+}
+.service_box ul li.licensee_tab {
+	right: 0;
+}
+.service_box ul li h4 {
+	width: 140px; height: 50px; line-height: 50px; 
+	background: #003769; padding: 0 20px; 
+	box-sizing: border-box;
+}
+.service_box ul li h4 a {font-size: 17px; color: #fff;}
+.service_box ul li ul {position: absolute; top: 100px; left: 0;}
+.service_box ul li ul li {float: left; width: 20%; height: 140px; text-align: center;}
+.service_box ul li ul li a {}
+.service_box ul li ul li a p {
+	display: block; 
+	width: 80px; height: 80px; line-height: 80px; 
+	border-radius: 50%; background: #e8f6fe; 
+	margin: 0 auto 5px;}
+.service_box ul li ul li a p img {width: 52px; height: 46px; vertical-align: middle;}
+.service_box ul li ul li span {
+	display: block; 
+	font-size: 15px; color: #333; 
+	word-break: keep-all; letter-spacing: -1px;
+	padding: 0 20px;
+}
 
 
 
@@ -90,8 +189,8 @@
 @media (max-width: 1420px) {
     .container {width: 100%;}
 
-    .logo {left: 34px;}
-    .logo_text {left: 184px;}
+    .logo {margin-left: 33px;}
+    .logo_text {left: 183px;}
     .logo_innogov {left: 325px;}
 
     .util_box {right: 33px;}
