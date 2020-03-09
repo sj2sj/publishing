@@ -13,7 +13,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
 </head>
 <body>
 	
@@ -44,16 +44,58 @@
 			<nav class="util_box">
 				<h2 class="ir_so">상단 유틸 박스</h2>
 				<ul>
-					<li><a href="#"><img src="assets/img/icons/ico_home_toputil.png" alt="홈페이지"></a></li>
-					<li class="bar"><a href="#"><img src="assets/img/icons/img_taegeukgi.png" alt="국가상징"><span>국가상징</span></a></li>
-					<li class="bar"><a href="#"><span>ENGLISH</span><img src="assets/img/icons/ico_blank.png" alt="영문 페이지"></a></li>
-					<li class="bar pr2"><a href="https://blog.naver.com/prologue/PrologueList.nhn?blogId=k_customs"><img src="assets/img/icons/ico_snsB.png" alt="블로그"></a></li>
-					<li class="pr2"><a href="https://www.facebook.com/ftacustoms/"><img src="assets/img/icons/ico_snsF.png" alt="페이스북"></a></li>
-					<li class="pr2"><a href="https://twitter.com/koreacustoms"><img src="assets/img/icons/ico_snsT.png" alt="트위터"></a></li>
-					<li class="pr2"><a href="https://www.youtube.com/user/koreacustoms"><img src="assets/img/icons/ico_snsY.png" alt="유튜브"></a></li>
-					<li><a href="https://www.instagram.com/korea_customs/"><img src="assets/img/icons/ico_snsI.png" alt="인스타그램"></a></li>
-					<li class="bar"><a href="#"><img src="assets/img/icons/btn_Tplus.png" alt="페이지 확대"></a></li>
-					<li class="page_minus"><a href="#"><img src="assets/img/icons/btn_Tminus.png" alt="페이지 축소"></a></li>
+					<li>
+						<a href="#">
+							<img src="assets/img/icons/ico_home_toputil.png" alt="홈페이지">
+						</a>
+					</li>
+					<li class="bar">
+						<a href="#">
+							<img src="assets/img/icons/img_taegeukgi.png" alt="국가상징">
+							<span>국가상징</span>
+						</a>
+					</li>
+					<li class="bar">
+						<a href="#">
+							<span>ENGLISH</span>
+							<img src="assets/img/icons/ico_blank.png" alt="영문 페이지">
+						</a>
+					</li>
+					<li class="bar pr2">
+						<a href="https://blog.naver.com/prologue/PrologueList.nhn?blogId=k_customs">
+							<img src="assets/img/icons/ico_snsB.png" alt="블로그">
+						</a>
+					</li>
+					<li class="pr2">
+						<a href="https://www.facebook.com/ftacustoms/">
+							<img src="assets/img/icons/ico_snsF.png" alt="페이스북">
+						</a>
+					</li>
+					<li class="pr2">
+						<a href="https://twitter.com/koreacustoms">
+							<img src="assets/img/icons/ico_snsT.png" alt="트위터">
+						</a>
+					</li>
+					<li class="pr2">
+						<a href="https://www.youtube.com/user/koreacustoms">
+							<img src="assets/img/icons/ico_snsY.png" alt="유튜브">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/korea_customs/">
+							<img src="assets/img/icons/ico_snsI.png" alt="인스타그램">
+						</a>
+					</li>
+					<li class="bar">
+						<a href="#">
+							<img src="assets/img/icons/btn_Tplus.png" alt="페이지 확대">
+						</a>
+					</li>
+					<li class="page_minus">
+						<a href="#">
+							<img src="assets/img/icons/btn_Tminus.png" alt="페이지 축소">
+						</a>
+					</li>
 				</ul>
 			</nav>
 			<!-- //util_box 상단 유틸 메뉴 끝 -->
@@ -96,24 +138,31 @@
 	<!-- article 메인 시작 -->
 	<article id="article">
 		<h2 class="ir_so">메인 컨텐츠</h2>
-		<div class="container">
+		<div class="container clearfix">
 			<!-- banner_box1 시작 -->
 			<section class="banner_box1">
 				<h3 class="ir_so">정책 안내</h3>
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/img/banner1/img_ban1_1.png" alt="관세청 개청 50주년 기념 엠블럼, 슬로건 공모전"></div>
-						<div class="swiper-slide"><img src="assets/img/banner1/img_ban1_2.png" alt="보건용 마스크 통관절차 안내"></div>
-						<div class="swiper-slide"><img src="assets/img/banner1/img_ban1_3.png" alt="코로나 바이러스 확산 위기 극복을 위한 중국의 지역별 현지 동향"></div>
-						<div class="swiper-slide"><img src="assets/img/banner1/img_ban1_4.png" alt="코로나 바이러스 정보 확인"></div>
+				<div class="slick-container">
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_1.png" alt="관세청 개청 50주년 기념 엠블럼, 슬로건 공모전">
+						</a>
 					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-paging-box">
-					    <div class="swiper-pagination"></div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_2.png" alt="보건용 마스크 통관절차 안내">
+						</a>
 					</div>
-				    <!-- Add Arrows -->
-				    <div class="swiper-button-next"></div>
-				    <div class="swiper-button-prev"></div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_3.png" alt="코로나 바이러스 확산 위기 극복을 위한 중국의 지역별 현지 동향">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_4.png" alt="코로나 바이러스 정보 확인">
+						</a>
+					</div>
 				</div>
 			</section>
 			<!-- //banner_box1 끝 -->
@@ -122,125 +171,650 @@
 			<section class="service_box">
 				<h3>주요 서비스</h3>
 					<ul>
-						<li class="public_tab">
-							<h4> <a href="#"> 일반인 </a> </h4>
-								<ul>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_01.png" alt="개인통관 고유부호발급">
-											</p>
-											<span>개인통관 고유부호발급</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_08.png" alt="휴대품통관 진행정보">
-											</p>
-											<span>휴대품통관 진행정보</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_03.png" alt="여행자 분실물검색">
-											</p>
-											<span>여행자 분실물검색</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_02.png" alt="여행자 휴대품통관FAQ">
-											</p>
-											<span>여행자 휴대품통관FAQ</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_09.png" alt="우편물통관 진행정보">
-											</p>
-											<span>우편물통관 진행정보</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_04.png" alt="예상세액 조회">
-											</p>
-											<span>예상세액 조회</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_10.png" alt="해외직구 여기로">
-											</p>
-											<span>해외직구 여기로</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_05.png" alt="해외 이사화물">
-											</p>
-											<span>해외 이사화물</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_06.png" alt="간이통관 절차">
-											</p>
-											<span>간이통관 절차</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<p>
-												<img src="assets/img/icons/m_link01_11.png" alt="공매공고">
-											</p>
-											<span>공매공고</span>
-										</a>
-									</li>
-								</ul>
+						<li class="public_tab active">
+							<h4> 
+								<a href="#"> 일반인 <span> </span> </a>
+							</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_01.png" alt="개인통관 고유부호발급">
+										</p>
+										<span>개인통관 고유부호발급</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_08.png" alt="휴대품통관 진행정보">
+										</p>
+										<span>휴대품통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_03.png" alt="여행자 분실물검색">
+										</p>
+										<span>여행자 분실물검색</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_02.png" alt="여행자 휴대품통관FAQ">
+										</p>
+										<span>여행자 휴대품통관FAQ</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_09.png" alt="우편물통관 진행정보">
+										</p>
+										<span>우편물통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_04.png" alt="예상세액 조회">
+										</p>
+										<span>예상세액 조회</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_10.png" alt="해외직구 여기로">
+										</p>
+										<span>해외직구 여기로</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_05.png" alt="해외 이사화물">
+										</p>
+										<span>해외 이사화물</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_06.png" alt="간이통관 절차">
+										</p>
+										<span>간이통관 절차</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_11.png" alt="공매공고">
+										</p>
+										<span>공매공고</span>
+									</a>
+								</li>
+							</ul>
 						</li>
 						<li class="licensee_tab">
-							<h4> <a href="#"> 사업자 </a> </h4>
+							<h4> 
+								<a href="#"> 사업자 <span> </span> </a> 
+							</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_01.png" alt="통관 고유부호">
+										</p>
+										<span>통관 고유부호</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_02.png" alt="수입화물통관 진행정보">
+										</p>
+										<span>수입화물통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_03.png" alt="수입세금 계산서">
+										</p>
+										<span>수입세금 계산서</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_04.png" alt="수출 이행내역">
+										</p>
+										<span>수출 이행내역</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_05.png" alt="원산지 증명서발급">
+										</p>
+										<span>원산지 증명서발급</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_06.png" alt="보세 운송차량">
+										</p>
+										<span>보세 운송차량</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_07.png" alt="출항 허가정보">
+										</p>
+										<span>출항 허가정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_08.png" alt="상표권세관 신고정보">
+										</p>
+										<span>상표권세관 신고정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_09.png" alt="납세 도움정보">
+										</p>
+										<span>납세 도움정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_10.png" alt="세계HS 정보">
+										</p>
+										<span>세계HS 정보</span>
+									</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
 			</section>
 			<!-- //service 끝 -->
+
+
+			<!-- notice_box 공지 시작 -->
+			<section class="notice_box">
+				<h3 class="ir_so"> 공지사항 </h3>
+				<ul>
+					<li class="active">
+						<h4>
+							<a href="#">전체</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">2020년도 인천세관 제2회 공무직 근로자(조리) 채용시험 서류전형 합격자 및 면접시험 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">중앙관세분석소 일반임기제(영문교열사) 채용 최종 합격자 공고 및 채용후보자 등록 안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">“정부가 보건용 아닌 패션 마스크까지 수출 막는다”는 주장은 사실이 아닙니다 </a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년 관세청 일반임기제공무원(변호사 관세소송 분야) 경력경쟁채용 서류전형 합격자 및 면접장소 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년도 관세청 일반임기제공무원(무역통계 관리) 경력경쟁채용시험 최종합격자 공고 및 채용후보자 등록안내</a>
+								<em>2020.03.09</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>
+							<a href="#">공지·공고</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">2020년도 인천세관 제2회 공무직 근로자(조리) 채용시험 서류전형 합격자 및 면접시험 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">중앙관세분석소 일반임기제(영문교열사) 채용 최종 합격자 공고 및 채용후보자 등록 안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년 관세청 일반임기제공무원(변호사 관세소송 분야) 경력경쟁채용 서류전형 합격자 및 면접장소 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년도 관세청 일반임기제공무원(무역통계 관리) 경력경쟁채용시험 최종합격자 공고 및 채용후보자 등록안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">보건용·수술용 마스크 반출 금지 안내문 (개정3.6)(우편,특송,휴대품)</a>
+								<em>2020.03.05</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>
+							<a href="#">보도자료</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">관세청, “성실 납세에 감사드립니다”</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">관세청, 2020년 관세사 제1차 시험일정 연기</a>
+								<em>2020.03.03</em>
+							</li>
+							<li>
+								<a href="#">1인 기업도 수출하도록 도와드립니다</a>
+								<em>2020.03.02</em>
+							</li>
+							<li>
+								<a href="#">AEO 인증기업, 2019년 한해 3,858억원 경제적 혜택 봤다</a>
+								<em>2020.03.02</em>
+							</li>
+							<li>
+								<a href="#">2월 수출입 현황(잠정치)</a>
+								<em>2020.03.01</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>
+							<a href="#">팩트체크</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">“정부가 보건용 아닌 패션 마스크까지 수출 막는다”는 주장은 사실이 아닙니다</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">“52개국 FTA 맺고도...1분기 수출 관세혜택 19% 그쳐” 보도(2019.5.9, 머니투데이)는 오해의 소지가 있습니다.</a>
+								<em>2019.05.10</em>
+							</li>
+							<li>
+								<a href="#">관세청은 지난해‘북한산 석탄의 불법수입 및 대금지급’을 철저히 수사했습니다(TV조선(5.3) 보도에 대한 해명)</a>
+								<em>2019.05.07</em>
+							</li>
+							<li>
+								<a href="#">관세청 밀수단속 포상금, 이달의 관세인 등 지급한 사실이 없습니다.(4.22 한국일보)</a>
+								<em>2019.04.22</em>
+							</li>
+							<li>
+								<a href="#">“북한 전역 생산품 한국산 인정 추진” 언론보도(‘19.4.13, 동아일보, 헤럴드경제 등)</a>
+								<em>2019.04.14</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>
+							<a href="#">행정예고</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">보세사제도 운영에 관한 고시(제출기한:2020.03.25. 까지)</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">수입물품 과세가격 결정에 관한 고시(제출기한:2020.02.24. 까지)</a>
+								<em>2020.02.20</em>
+							</li>
+							<li>
+								<a href="#">수출입 안전관리 우수업체 공인심사 운영에 관한 훈령 폐지 행정예고(제출기한:2020.02.03. 까지)</a>
+								<em>2020.02.03</em>
+							</li>
+							<li>
+								<a href="#">종합심사 운영에 관한 훈령</a>
+								<em>2020.02.03</em>
+							</li>
+							<li>
+								<a href="#">실험실 안전환경 조성에 관한 훈령(제출기한:2020.02.07. 까지)</a>
+								<em>2020.02.03</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>
+							<a href="#">최신법령</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">검역법</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">감염병의 예방 및 관리에 관한 법률 시행규칙</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">감염병의 예방 및 관리에 관한 법률(감염병예방법)</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">마약류 관리에 관한 법률 시행령</a>
+								<em>2020.03.03</em>
+							</li>
+							<li>
+								<a href="#">약사법 시행령</a>
+								<em>2020.03.03</em>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!-- //notice_box 공지 끝 -->
+
+			
+			<!-- banner_box2 시작 -->
+			<section class="banner_box2">
+				<h3 class="ir_so"> 관세청 배너 박스 </h3>
+				<div class="slick-container">
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_1.png" alt="보건용 마스크, 손소독제 매점매석 행위 신고센터 운영">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_2.png" alt="공공분야 갑질 근절을 위한 가이드라인">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_3.png" alt="양심도 지키고 주머니도 지키고">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_4.png" alt="쉽게보는 품목분류">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_5.png" alt="사회 문제 챌린지">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_6.png" alt="2020년 관세청 업무계획">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_7.png" alt="2020년 3월 3일 제54회 납세자의 날">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- banner_box2 끝 -->
+
+
+			<!-- info_box 시작 -->
+			<section class="info_box">
+				<h3 class="ir_so"> 통관 실적 / 관세 환율 정보</h3>
+				<ul>
+					<li class="active">
+						<h4>
+							<a href="#">이달의 통관실적</a>
+						</h4>
+						<div>
+							<p class="info_std">수리일 기준(백만불, %(전년동기대비))</p>
+							<div class="info_cont_box1">
+								<p class="date">당월 <span>(2.1 - 2.29)</span></p>
+								<ul>
+									<li>
+										<em class="export">수출</em>
+										<span>41,262</span>
+										<strong>4.5</strong>
+									</li>
+									<li>
+										<em class="import">수입</em>
+										<span>37,147</span>
+										<strong>1.4</strong>
+									</li>
+								</ul>
+							</div>
+							<div class="info_cont_box2">
+							<p class="date">연간 <span>(1.1 - 2.29)</span></p>
+								<ul>
+									<li>
+										<em class="export">수출</em>
+										<span>84,522</span>
+										<strong>-1.3</strong>
+									</li>
+									<li>
+										<em class="import">수입</em>
+										<span>79,872</span>
+										<strong>-2.4</strong>
+									</li>
+								</ul>
+							</div>
+							<p class="info_std">조업일수[(’19) 19일,(’20) 22.5일]</p>
+						</div>
+					</li>
+					<li>
+						<h4>
+							<a href="#">관세환율정보</a>
+						</h4>
+					</li>
+				</ul>
+				<a class="info_more" href="#">통관실적 더보기</a>
+			</section>
+			<!-- //info_box 끝 -->
+
 		</div>
 	</article>
 	<!-- article 메인 끝 -->
 
+	<!-- return_box 시작 (하단 회색바) -->
+	<div class="return_box">
+		<div class="container">
+			<ul class="return_tell">
+				<li>
+					<a href="#"> 
+						<em> 고객지원센터 </em> 
+						<strong> 국번없이 125 </strong>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<em> 전자통관 시스템 </em>
+						<strong> 1544-1285 </strong>
+					</a>
+				</li>
+			</ul>
 
+			<ul class="return_report">
+				<li>
+					<a href="#">
+						<span>밀수신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>예산낭비신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>원산지 유통이력 위반신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>은닉재산 신고</span>
+					</a>
+				</li>
+			</ul>
 
-	<div class="testh">
-		
+		</div>	
 	</div>
+	<!-- return_box 끝 -->
+
+	<!-- site_box 사이트 링크 시작 -->
+	<div class="site_box">
+		<div class="container">
+			<div class="slick-container3">
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+						광화문1번가
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							민원 24
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							행복드림 열린소비자포털
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							당신의 건강을 위협합니다.
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							생활법령정보
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							이제 변호사를 통해서 공익신고가 가능합니다.
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							청렴포털
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							나라지표
+						</span>
+					</a>
+				</div>	
+			</div>
+		</div>	
+	</div>
+	<!-- site_box 끝 -->
+
+	
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer_site">
+			<div class="container">
+				<ul class="footer_info_link">
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">뷰어프로그램</a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#" class="red">개인정보처리방침</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">고객만족도조사</a></li>
+				</ul>
+				<ul class="footer_menu">
+					<li>
+						<a href="#">패밀리 사이트
+							<span class="plus_btn"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">산하 세관
+							<span class="plus_btn"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<address class="address">
+			<div class="container clearfix">
+				<em class="footer_logo">
+					<img src="assets/img/f_logo.png" alt="관세청">
+				</em>
+				<p class="post">
+					<span>(35208) 대전광역시 서구 청사로 189 정부대전청사 1동</span>
+					<span>홈페이지 문의 1544-1285</span>
+				</p>
+				<p class="copyright">
+					Copyright©Korea Customs Service. All Rights Reserved.
+				</p>
+			</div>
+		</address>
+	</footer>
+	<!-- //footer -->
+
 
 	<!-- script -->
 	<script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
-    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/slick.min.js"></script>
 
 
 
     <script>
-    	var swiper = new Swiper('.swiper-container', {
-	    	pagination: {
-	        el: '.swiper-pagination',
-	        type: 'fraction',
-	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-	    });
+    	$(document).ready(function(){
+			$('.slick-container').slick();
+
+			$('.slick-container3').slick({
+				slidesToShow: 6,
+  				slidesToScroll: 1,
+			});
+		});
+
+
+    	/* --- service box , notice_box 탭 선택 이벤트 --- */
+    	var service_tabMenu = $('.service_box');
+    	var notice_tabMenu = $('.notice_box');
+    	
+    	//컨텐츠 내용 hide & show 처리
+		service_tabMenu.find('ul > li > ul').hide();
+        service_tabMenu.find('li.active > ul').show();
+
+        notice_tabMenu.find('ul > li > ul').hide();
+        notice_tabMenu.find('li.active > ul').show();
+
+        
+        function tabList(e) {
+            e.preventDefault(); //#기능 차단
+            var target = $(this);
+            target.parent('h4').next().show().parent('li').addClass('active').siblings('li').removeClass('active').find('ul').hide();
+        }
+
+        service_tabMenu.find('ul > li > h4 > a').click(tabList).focus(tabList);
+        notice_tabMenu.find('ul > li > h4 > a').click(tabList).focus(tabList);
 
     </script>
 
