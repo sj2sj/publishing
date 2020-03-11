@@ -164,6 +164,15 @@
 						</a>
 					</div>
 				</div>
+				<div class="control-btn">
+					<a href="#" class="sl_stop"></a>
+					<a href="#" class="sl_start"></a>
+				</div>
+				<div class="slick-count">
+					<span class="cur_page">2</span>
+					<span class="slash">/</span>
+					<span class="tot_page">3</span>
+				</div>
 			</section>
 			<!-- //banner_box1 끝 -->
 
@@ -524,7 +533,7 @@
 			<!-- banner_box2 시작 -->
 			<section class="banner_box2">
 				<h3 class="ir_so"> 관세청 배너 박스 </h3>
-				<div class="slick-container">
+				<div class="slick-container2">
 					<div class="slick-slide">
 						<a href="#">
 							<img src="assets/img/banner2/img_ban2_1.png" alt="보건용 마스크, 손소독제 매점매석 행위 신고센터 운영">
@@ -561,6 +570,15 @@
 						</a>
 					</div>
 				</div>
+				<div class="control-btn2">
+					<a href="#" class="sl_stop"></a>
+					<a href="#" class="sl_start"></a>
+				</div>
+				<div class="slick-count2">
+					<span class="cur_page">2</span>
+					<span class="slash">/</span>
+					<span class="tot_page">3</span>
+				</div>
 			</section>
 			<!-- banner_box2 끝 -->
 
@@ -569,7 +587,7 @@
 			<section class="info_box">
 				<h3 class="ir_so"> 통관 실적 / 관세 환율 정보</h3>
 				<ul>
-					<li class="active">
+					<li class="info_record_tab active">
 						<h4>
 							<a href="#">이달의 통관실적</a>
 						</h4>
@@ -607,14 +625,42 @@
 							</div>
 							<p class="info_std">조업일수[(’19) 19일,(’20) 22.5일]</p>
 						</div>
+						<a class="info_more" href="#">통관실적 더보기</a>
 					</li>
-					<li>
+					<li class="info_rate_tab">
 						<h4>
 							<a href="#">관세환율정보</a>
 						</h4>
+						<div>
+							<div>
+								<div>
+									<p>미국(USD)</p>
+									<em class="export">수출</em> <strong>1184.13</strong>
+									<em class="import">수입</em> <strong>1207.23</strong>
+								</div>
+								<div class="pl20">
+									<p>일본(JPY)</p>
+									<em class="export">수출</em> <strong>11.0386</strong>
+									<em class="import">수입</em> <strong>11.2548</strong>
+								</div>
+							</div>
+							<div>
+								<div class="vtc-btm">
+									<p>유럽(EUR)</p>
+									<em class="export">수출</em> <strong>1320.2</strong>
+									<em class="import">수입</em> <strong>1346.68</strong>
+								</div>
+								<div class="vtc-btm pl20">
+									<p>중국(CNY)</p>
+									<em class="export">수출</em> <strong>169.83</strong>
+									<em class="import">수입</em> <strong>173.25</strong>
+								</div>
+							</div>
+						</div>
+						<a class="info_more" href="#">관세환율 더보기</a>
 					</li>
 				</ul>
-				<a class="info_more" href="#">통관실적 더보기</a>
+				
 			</section>
 			<!-- //info_box 끝 -->
 
@@ -728,6 +774,11 @@
 					</a>
 				</div>	
 			</div>
+			<div class="control-btn3">
+				<a href="#" class="sl_stop"></a>
+				<a href="#" class="sl_start"></a>
+			</div>
+			<a href="#" class="site_list"></a>
 		</div>	
 	</div>
 	<!-- site_box 끝 -->
@@ -786,16 +837,81 @@
 
     <script>
     	$(document).ready(function(){
-			$('.slick-container').slick();
 
+    		/* banner_box1 slick .. */
+    		$('.slick-container').on("init", function(event, slick) {
+				$('.slick-count .cur_page').text(slick.currentSlide+1);
+				$('.slick-count .tot_page').text(slick.slideCount);
+			});
+    		
+			$('.slick-container').slick({
+				autoplay: true,
+  				autoplaySpeed: 2000,
+  				
+			});
+
+			$(".slick-container").on("afterChange", function(event, slick, currentSlide) {
+				$('.slick-count .cur_page').text(slick.currentSlide+1);
+			});
+
+			/* banner_box2 slick .. */
+			$('.slick-container2').on("init", function(event, slick){
+				$('.slick-count2 .cur_page').text(slick.currentSlide+1);
+				$('.slick-count2 .tot_page').text(slick.slideCount);
+			});
+
+			$('.slick-container2').slick({
+				autoplay: true,
+  				autoplaySpeed: 2000,
+  				
+			});
+
+			$(".slick-container2").on("afterChange", function(event, slick, currentSlide) {
+				$('.slick-count2 .cur_page').text(slick.currentSlide+1);
+			});
+
+			/* info_box slick .. */
 			$('.slick-container3').slick({
 				slidesToShow: 6,
   				slidesToScroll: 1,
+  				// autoplay: true,
+  				// autoplaySpeed: 2000
 			});
+
+	
 		});
 
+		
+		var control_btn = $('.control-btn');
+		var control_btn2 = $('.control-btn2');
 
-    	/* --- service box , notice_box 탭 선택 이벤트 --- */
+		/* slick stop & start */
+		function slChangeBtn(e) {
+			e.preventDefault();
+			var target = $(this);
+			var slick_gbn;
+			//배너 슬라이드 구분
+			if (target.parents().hasClass('banner_box1')) {
+				slick_gbn = 'slick-container';
+			} else if (target.parents().hasClass('banner_box2')) {
+				slick_gbn = 'slick-container2';
+			}
+
+			if (target.attr('class') == 'sl_stop') {
+				$('.'+slick_gbn).slick('slickPause');
+			} else if (target.attr('class') == 'sl_start') {
+				$('.'+slick_gbn).slick('slickPlay');
+			}
+			target.css('display', 'none');
+			target.siblings().css('display', 'block');
+			
+		}
+		control_btn.find('a').click(slChangeBtn);
+		control_btn2.find('a').click(slChangeBtn);
+
+
+
+    	/* --- service_box , notice_box 탭 선택 이벤트 --- */
     	var service_tabMenu = $('.service_box');
     	var notice_tabMenu = $('.notice_box');
     	
@@ -815,6 +931,27 @@
 
         service_tabMenu.find('ul > li > h4 > a').click(tabList).focus(tabList);
         notice_tabMenu.find('ul > li > h4 > a').click(tabList).focus(tabList);
+        /* ---///service_box , notice_box 탭 선택 이벤트 끝 --- */
+
+
+
+
+        /* --- info_box 탭 선택 이벤트 --- */
+        var info_tabMenu = $('.info_box');
+        //컨텐츠 내용 hide & show 처리
+		info_tabMenu.find('ul > li > div').hide().find('+ a').hide();
+        info_tabMenu.find('li.active > div').show().find('+ a').show();
+
+        function info_tabList(e) {
+            e.preventDefault(); //#기능 차단
+            var target = $(this);
+            target.parent('h4').next().show().find('+ a').show().parent('li').addClass('active').siblings('li').removeClass('active').find(' > div').hide().find('+ a').hide();
+        }
+        info_tabMenu.find('ul > li > h4 > a').click(info_tabList).focus(info_tabList);
+        /* --- ///info_box 탭 선택 이벤트 끝 --- */
+
+
+
 
     </script>
 
