@@ -44,7 +44,7 @@
 			<nav class="util_box">
 				<h2 class="ir_so">상단 유틸 박스</h2>
 				<ul>
-					<li>
+					<li class="home">
 						<a href="#">
 							<img src="assets/img/icons/ico_home_toputil.png" alt="홈페이지">
 						</a>
@@ -61,32 +61,32 @@
 							<img src="assets/img/icons/ico_blank.png" alt="영문 페이지">
 						</a>
 					</li>
-					<li class="bar pr2">
+					<li class="bar pr2 sns_icon">
 						<a href="https://blog.naver.com/prologue/PrologueList.nhn?blogId=k_customs">
 							<img src="assets/img/icons/ico_snsB.png" alt="블로그">
 						</a>
 					</li>
-					<li class="pr2">
+					<li class="pr2 sns_icon">
 						<a href="https://www.facebook.com/ftacustoms/">
 							<img src="assets/img/icons/ico_snsF.png" alt="페이스북">
 						</a>
 					</li>
-					<li class="pr2">
+					<li class="pr2 sns_icon">
 						<a href="https://twitter.com/koreacustoms">
 							<img src="assets/img/icons/ico_snsT.png" alt="트위터">
 						</a>
 					</li>
-					<li class="pr2">
+					<li class="pr2 sns_icon">
 						<a href="https://www.youtube.com/user/koreacustoms">
 							<img src="assets/img/icons/ico_snsY.png" alt="유튜브">
 						</a>
 					</li>
-					<li>
+					<li class="sns_icon">
 						<a href="https://www.instagram.com/korea_customs/">
 							<img src="assets/img/icons/ico_snsI.png" alt="인스타그램">
 						</a>
 					</li>
-					<li class="bar">
+					<li class="bar page_plus">
 						<a href="#">
 							<img src="assets/img/icons/btn_Tplus.png" alt="페이지 확대">
 						</a>
@@ -111,7 +111,11 @@
 					</fieldset>
 				</form>
 			</div>
+			<!-- mobile_search -->
+			<a href="#" class="m_search"> </a>
 			<!-- //search_box 검색창 끝 -->
+			<a href="#" class="m_menu"> <span></span> </a>
+
 
 			<!-- 메뉴 -->
 			<nav class="gnb_box">
@@ -378,7 +382,7 @@
 			<!-- notice_box 공지 시작 -->
 			<section class="notice_box">
 				<h3 class="ir_so"> 공지사항 </h3>
-				<ul>
+				<ul class="clearfix">
 					<li class="active">
 						<h4 class="notice_title1">
 							<a href="#">전체</a>
@@ -408,7 +412,7 @@
 					</li>
 					<li>
 						<h4 class="notice_title2">
-							<a href="#">공지·<br>공고</a>
+							<a href="#">공지&middot;<br>공고</a>
 						</h4>
 						<ul>
 							<li>
@@ -650,26 +654,43 @@
 						<div>
 							<div>
 								<div>
-									<p>미국(USD)</p>
-									<em class="export">수출</em> <strong>1184.13</strong>
-									<em class="import">수입</em> <strong>1207.23</strong>
+									<p class="late_title">미국(USD)</p>
+									<p>
+										<em class="export">수출</em> <strong>1184.13</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>1207.23</strong>
+									</p>
+									
 								</div>
 								<div class="pl20">
-									<p>일본(JPY)</p>
-									<em class="export">수출</em> <strong>11.0386</strong>
-									<em class="import">수입</em> <strong>11.2548</strong>
+									<p class="late_title">일본(JPY)</p>
+									<p>
+										<em class="export">수출</em> <strong>11.0386</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>11.2548</strong>
+									</p>
 								</div>
 							</div>
 							<div>
 								<div class="vtc-btm">
-									<p>유럽(EUR)</p>
-									<em class="export">수출</em> <strong>1320.2</strong>
-									<em class="import">수입</em> <strong>1346.68</strong>
+									<p class="late_title">유럽(EUR)</p>
+									<p>
+										<em class="export">수출</em> <strong>1320.2</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>1346.68</strong>
+									</p>
 								</div>
 								<div class="vtc-btm pl20">
-									<p>중국(CNY)</p>
-									<em class="export">수출</em> <strong>169.83</strong>
-									<em class="import">수입</em> <strong>173.25</strong>
+									<p class="late_title">중국(CNY)</p>
+									<p>
+										<em class="export">수출</em> <strong>169.83</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>173.25</strong>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -804,7 +825,7 @@
 	<footer id="footer">
 		<div class="footer_site">
 			<div class="container">
-				<ul class="footer_info_link">
+				<ul class="footer_info_link clearfix">
 					<li><a href="#">이용안내</a></li>
 					<li><a href="#">뷰어프로그램</a></li>
 					<li><a href="#">저작권보호정책</a></li>
@@ -812,7 +833,7 @@
 					<li><a href="#">찾아오시는길</a></li>
 					<li><a href="#">고객만족도조사</a></li>
 				</ul>
-				<ul class="footer_menu">
+				<ul class="footer_menu clearfix">
 					<li class="active">
 						<a href="#">패밀리 사이트
 							<span class="plus_btn"></span>
