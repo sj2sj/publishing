@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="sjsj">
+
+	<meta property="og:title" content="관세청 퍼블리싱">
+    <meta property="og:description" content="관세청 퍼블리싱 사이트입니다.">
+    <meta property="og:url" content="https://github.com/sj2sj/customs" />
+	<title>관세청 클론코딩</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../assets/favi/favicon.ico">
+
+</head>
+<body>
+
+	<!-- 헤더 -->
+	<!-- header -->
+	<header id="header">
+		<div class="header_area">
+			<div class="container">
+				<!-- logo -->
+				<h1 class="logo">
+					<a href="http://sj2sj.dothome.co.kr/customs/">
+						<img src="../assets/img/logo.png" alt="관세청">
+					</a>
+				</h1>
+				<p class="logo_text">
+					<a href="#">
+						<img src="../assets/img/logo2.png" alt="국민의 나라 정의로운 대한민국">
+					</a>
+				</p>
+				<p class="logo_innogov">
+					<a href="#">
+						<img src="../assets/img/img_innogov.png" alt="정부혁신 보다 나은 정부">
+					</a>
+				</p>
+				<!-- //logo 끝 -->
+
+				<!-- util_box 상단 유틸 메뉴 -->
+				<nav class="util_box">
+					<h2 class="ir_so">상단 유틸 박스</h2>
+					<ul>
+						<li class="home">
+							<a href="#">
+								<img src="../assets/img/icons/ico_home_toputil.png" alt="홈페이지">
+							</a>
+						</li>
+						<li class="bar">
+							<a href="#">
+								<img src="../assets/img/icons/img_taegeukgi.png" alt="국가상징">
+								<span>국가상징</span>
+							</a>
+						</li>
+						<li class="bar">
+							<a href="#">
+								<span>ENGLISH</span>
+								<img src="../assets/img/icons/ico_blank.png" alt="영문 페이지">
+							</a>
+						</li>
+						<li class="bar pr2 sns_icon">
+							<a href="https://blog.naver.com/prologue/PrologueList.nhn?blogId=k_customs">
+								<img src="../assets/img/icons/ico_snsB.png" alt="블로그">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://www.facebook.com/ftacustoms/">
+								<img src="../assets/img/icons/ico_snsF.png" alt="페이스북">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://twitter.com/koreacustoms">
+								<img src="../assets/img/icons/ico_snsT.png" alt="트위터">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://www.youtube.com/user/koreacustoms">
+								<img src="../assets/img/icons/ico_snsY.png" alt="유튜브">
+							</a>
+						</li>
+						<li class="sns_icon">
+							<a href="https://www.instagram.com/korea_customs/">
+								<img src="../assets/img/icons/ico_snsI.png" alt="인스타그램">
+							</a>
+						</li>
+						<li class="bar page_plus">
+							<a href="#">
+								<img src="../assets/img/icons/btn_Tplus.png" alt="페이지 확대">
+							</a>
+						</li>
+						<li class="page_minus">
+							<a href="#">
+								<img src="../assets/img/icons/btn_Tminus.png" alt="페이지 축소">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //util_box 상단 유틸 메뉴 끝 -->
+
+				<!-- search_box 검색창 -->
+				<div class="search_box">
+					<h2 class="ir_so">통합검색</h2>
+					<form id="search_form" class="s_form">
+						<fieldset>
+							<legend class="ir_so">통합검색</legend>
+							<input class="search_text" type="text" placeholder="검색어를 입력하세요">
+							<button class="search_btn" type="submit"><span class="ir_wa">통합검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- mobile_search -->
+				<a href="#" class="m_search"> </a>
+				<!-- //search_box 검색창 끝 -->
+				<a href="#" class="m_menu"> <span></span> </a>
+			</div>
+		</div>
+
+		<!-- 메뉴 -->
+		<nav class="gnb_box">
+			<div class="gnb_box_area"></div>
+			<h2 class="ir_so">메뉴</h2>
+			<div class="container">
+				<ul class="gnb_menu">
+					<li>
+						<a href="#">정보공개</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">정보공개 제도</a>
+								<ul class="gnb_depth2">
+									<li><a href="http://sj2sj.dothome.co.kr/customs/html/openInfo.html">정보공개 제도 안내</a></li>
+									<li><a href="#">비공개 대상정보 세부기준</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">사전정보 공표</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">사전정보공표 공표목록</a></li>
+									<li><a href="#">고액상습 체납자 명단공개</a></li>
+									<li><a href="#">부패 공직자 제재현황</a></li>
+									<li><a href="#">불법 마약류 정보</a></li>
+									<li><a href="#">정책 실명제</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">정보목록</a>
+								<ul class="gnb_depth2">
+									<li><a href="http://sj2sj.dothome.co.kr/customs/html/infoList.html">정보목록 공개</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">공공 데이터 개방</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">공공 데이터 제공신청</a></li>
+									<li><a href="#">공공 데이터 오류신고</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">관세행정</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">수출입 통관</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">수입 통관</a></li>
+									<li><a href="#">수출 통관</a></li>
+									<li><a href="#">특송물품 통관</a></li>
+									<li><a href="#">우편물 통관</a></li>
+									<li><a href="#">수입물품 가격신고 제도</a></li>
+									<li><a href="#">납세신고 및 납부방법</a></li>
+									<li><a href="#">관세감면 및 감면물품 사후관리</a></li>
+									<li><a href="#">지식재산권 보호</a></li>
+									<li><a href="#">신고/제출서류 보관</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">FTA</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">자유무역협정(FTA)란?</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">개인 통관</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">해외직구(전자상거래) 통관절차</a></li>
+									<li><a href="#">해외직구물품 관세환급</a></li>
+									<li><a href="#">여행자 휴대품 통관</a></li>
+									<li><a href="#">입국장 면세점</a></li>
+									<li><a href="#">해외 이사화물</a></li>
+									<li><a href="#">간이 통관절차</a></li>
+									<li><a href="#">출입국 외환신고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">기업부담 완화제도</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">보세공장 제도</a></li>
+									<li><a href="#">관세환급</a></li>
+									<li><a href="#">관세분할납부 대상</a></li>
+									<li><a href="#">수입 부가세 납부유예제도</a></li>
+									<li><a href="#">중소기업 활력지원 프로그램</a></li>
+									<li><a href="#">해외통관 애로 해소</a></li>
+									<li><a href="#">관세조사 유예</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">납세협력 프로그램</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">보정 제도</a></li>
+									<li><a href="#">AEO 제도</a></li>
+									<li><a href="#">수입세액 정산제도</a></li>
+									<li><a href="#">납세도움정보</a></li>
+									<li><a href="#">특수관계과세과격사전심사(ACVA)</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">성실신고 이행확인</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세조사</a></li>
+									<li><a href="#">종합심사</a></li>
+									<li><a href="#">원산지 표시</a></li>
+									<li><a href="#">원산지 검증</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">성실신고 불이행</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">신고내용 오류</a></li>
+									<li><a href="#">불성실 신고</a></li>
+									<li><a href="#">수정수입세금계산서 발급 제한</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">납세자 권리보호</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세조사시 납세자 권리보호</a></li>
+									<li><a href="#">FTA 원산지검증 납세자 권리보호</a></li>
+									<li><a href="#">납세자 권리구제</a></li>
+									<li><a href="#">과세전 적부심사 청구</a></li>
+									<li><a href="#">사후 구제절차</a></li>
+									<li><a href="#">관세 종합상담</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">기타 행정</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">외국환거래</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">알림·소식</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">공지사항</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보도자료</a></li>
+									<li><a href="#">팩트체크</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">공고공시</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세청 공고</a></li>
+									<li><a href="#">보세판매장 공고</a></li>
+									<li><a href="#">행동규칙 행정예고</a></li>
+									<li><a href="#">공매공고</a></li>
+									<li><a href="#">공시 송달방</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">홍보마당</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">해외직구 여기로</a></li>
+									<li><a href="#">인포그래픽</a></li>
+									<li><a href="#">쉽게보는 품목분류</a></li>
+									<li><a href="#">관우지</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">국제기구 현황 및 활동</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">세계무역기구(WTO)</a></li>
+									<li><a href="#">세계관세기구(WCO)</a></li>
+									<li><a href="#">아시아 태평양 경제협력체(APEC)</a></li>
+									<li><a href="#">동남아시아 국가연합(ASEAN)</a></li>
+									<li><a href="#">아시아 유럽 정상회의(ASEM)</a></li>
+									<li><a href="#">관세행정관련 국제협약</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">통합 자료실</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세용어 사전</a></li>
+									<li><a href="#">민원업무 편람</a></li>
+									<li><a href="#">관세행정 상담 사례집</a></li>
+									<li><a href="#">환전영업자</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">국민참여</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">참여광장</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">혁신광장(제안등록)</a></li>
+									<li><a href="#">일자리창출 계획서</a></li>
+									<li><a href="#">국민 신문고</a></li>
+									<li><a href="#">규제개혁 신문고</a></li>
+									<li><a href="#">칭찬합시다</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">신고마당</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">밀수 신고</a></li>
+									<li><a href="#">예산낭비 신고</a></li>
+									<li><a href="#">체납자 은닉재산 신고센터</a></li>
+									<li><a href="#">원산지표시 및 유통이력 위반신고</a></li>
+									<li><a href="#">부정부패 신고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">정책참여</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">정책토론</a></li>
+									<li><a href="#">전자 공청회</a></li>
+									<li><a href="#">설문조사</a></li>
+									<li><a href="#">국민 생각함</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">적극행정</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">적극행정과 소극행정</a></li>
+									<li><a href="#">적극행정 추진방안</a></li>
+									<li><a href="#">적극행정 국민추천</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">관세청소개</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">관세청 소개</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">미션과 비전</a></li>
+									<li><a href="#">핵심가치 및 행동규범</a></li>
+									<li><a href="#">설립목적 및 기능</a></li>
+									<li><a href="#">관세청 상징</a></li>
+									<li><a href="#">연혁</a></li>
+									<li><a href="#">관세행정 서비스 헌장</a></li>
+									<li><a href="#">관세청 공무원 행동강령</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">청차장 소개</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">청장 소개</a></li>
+									<li><a href="#">차장 소개</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">조직 및 직원안내</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세청 조직도</a></li>
+									<li><a href="#">세관조직 안내</a></li>
+									<li><a href="#">직원 안내</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">채용 정보</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">채용 정보</a></li>
+									<li><a href="#">관세공무원의 역할</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">관련 기관안내</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">정부기관</a></li>
+									<li><a href="#">유관기관</a></li>
+									<li><a href="#">외국관세</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">찾아오시는 길</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">약도</a></li>
+									<li><a href="#">청사 안내도</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#" class="sitemap">
+					<span></span>
+				</a>
+			</div>
+		</nav>
+		<!-- 메뉴 끝 -->
+	</header>
+	<!-- //header 끝 -->
+
+
+
+
+	<!-- article 시작 -->
+	<article>
+		<h2 class="ir_so">서브 컨텐츠</h2>
+		<!-- title_wrap 시작 -->
+		<section class="title_wrap">
+			<div class="container">
+				<h3 class="title_bg">정보공개</h3>
+				<div class="title">
+					<div class="title_text">
+						<h4>정보공개 제도</h4>
+					</div>	
+					<div class="title_breadcrumbs">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="../assets/img/icons/ico_home.png" alt="메뉴-처음으로">
+								</a>
+							</li>
+							<li>
+								<a href="#">정보공개</a>
+							</li>
+							<li>
+								<a href="#">정보공개 제도</a>
+							</li>
+							<li>
+								<a href="#">정보공개 제도안내</a>
+							</li>
+							<li>
+								<a href="#">정보공개 제도</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //title_wrap 끝 -->
+		
+		<!-- content_wrap 시작 -->
+		<section class="content_wrap">
+			<div class="container clearfix">
+				<nav class="content_nav">
+					<ul class="cont_nav_dep1">
+						<li class="on">
+							<a href="#">정보공개 제도</a>
+							<ul class="cont_nav_dep2">
+								<li class="active"><a href="#">정보공개 제도안내</a></li>
+								<li><a href="#">비공개 대상정보 세부기준</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">사전정보 공표</a>
+							<ul class="cont_nav_dep2">
+								<li><a href="#">사전정보공표 공표목록</a></li>
+								<li><a href="#">고액상습 체납자 명단공개</a></li>
+								<li><a href="#">부패 공직자 제재현황</a></li>
+								<li><a href="#">불법 마약류 정보</a></li>
+								<li><a href="#">정책 실명제</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">정보목록</a>
+							<ul class="cont_nav_dep2">
+								<li><a href="#">정보목록 공개</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">공공 데이터 개방</a>
+							<ul class="cont_nav_dep2">
+								<li><a href="#">공공 데이터 제공신청</a></li>
+								<li><a href="#">공공 데이터 오류신고</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="content_area">
+					<ul class="content_menu">
+						<li class="active"><a href="http://sj2sj.dothome.co.kr/customs/html/openInfo.html">정보공개 제도</a></li>
+						<li><a href="#">청구 및 처리절차</a></li>
+						<li><a href="#">수수료</a></li>
+						<li><a href="#">불복 구제절차</a></li>
+						<li><a href="#">정보공개 청구/조회/이의신청</a></li>
+					</ul>
+					<div class="content_ctnt pl35">
+						<strong class="sub_tit">정보공개제도</strong>
+						<dl class="ctnt_list ctnt_public">
+							<dt class="ctnt_dt_title">정보공개란?</dt>
+							<dd>국가기관·지방자치단체 등 공공기관이 업무 수행 중 생산하여 보유·관리하는 정보를 국민에게 공개함으로써, 국민의 알 권리를 보장하고 더 많은 정보를 바탕으로 국정운영에 대한 참여를 유도하기 위한 제도입니다.</dd>
+							<dd>국민의 알 권리를 확대하고 국정운영의 투명성을 높이기 위해 96년 &lt;공공기관의 정보공개에 관한 법률&gt;을 제정·공포하고, 98년 1월 1일부터 시행하였습니다. (2013.11.13 최종 개정)</dd>
+						</dl>
+
+						<dl class="ctnt_ulist ctnt_purpose">
+							<dt class="ctnt_dt_title">정보공개의 목적</dt>
+
+							<dt>국민의 알 권리 보장</dt>
+							<dd>정보공개는 국민의 알 권리의 충족을 위해서 필요합니다. 이 알 권리는 읽을 권리 및 들을 권리와 함께 인간의 인격형성을 위한 전제이며, 개인의 자기실현을 가능케 하는 개인적인 권리로서 인간의 행복추구권의 중요한 내용입니다.</dd>
+
+							<dt>국민의 국정 참여 확보</dt>
+							<dd>정보공개는 국민의 국정 참여를 확보하기 위해서도 필요합니다. 국민은 국정운영에 관한 많은 정보를 가짐으로써 올바른 정치적 의사를 형성하여 선거권을 행사하고, 여론형성을 통하여 국정운영에의 참여를 확보합니다.</dd>
+
+							<dt>국민의 신뢰성 확보</dt>
+							<dd>정보공개는 국민의 신뢰성을 확보하기 위해서도 필요합니다. 행정정보공개에 의하여 개방된 정부의 실현은 국정운영의 투명성을 보장하고, 공정하고 민주적인 국정 운영을 구현함으로써 국정에 대한 신뢰성을 확보하게 됩니다.</dd>
+
+							<dt>참된 민주주의의 실현</dt>
+							<dd>정보공개는 참된 민주주의 존립과 국민자치의 실현을 위해서도 필요합니다. 국민은 항시 국정의 다양한 정보에 자유로이 접근할 수 있어야 하고, 정부의 내부에 축적된 정보에 스스로 정통하여야 국정을 결정하는 주권자로서 올바른 정치적 판단을 내릴 수 있습니다.</dd>
+
+							<dt>국민의 권리와 이익의 보호</dt>
+							<dd>정보공개는 국민의 권리와 이익을 보호하기 위해서도 필요합니다. 현대의 국민 생활은 환경·공해·소비자·교통· 도시문제 등 갖가지 복잡한 문제로 시달리고 있습니다. 국민들은 자신들의 권리나 생명·건강·심신의 안전·생활을 보호하기 위해서 수시로 관련 정보를 획득하여 공공기관에 대하여 생활이익의 침해 원인에 대한 해명과 적절한 방지책 및 구제책을 강구하여 요구할 수 있는 권리가 보장되어야 합니다.</dd>
+
+							<dt>기타</dt>
+							<dd>정보공개는 정책 결정의 정당성 확보, 책임 행정의 구현, 부정부패 및 비리방지 효과, 지식과 학문의 발전 및 진리발견, 국가 정보의 균등한 배분 등을 위해서도 필요합니다.</dd>
+						</dl>
+
+						<table class="ctnt_gb_tb">
+							<caption class="ir_so">정보공개 담당자 구분</caption>
+							<colgroup>
+								<col style="width: 33.3%" span="3">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th>직위부서</th>
+									<th>연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>정보공개 책임관</th>
+									<td>운영 지원과장</td>
+									<td>(042) 481 - 7620</td>
+								</tr>
+								<tr>
+									<th>정보공개 담당관</th>
+									<td>운영 지원과 업무 담당관</td>
+									<td>(042) 481 - 7652</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="satisfaction_area">
+						<div class="satis_q">
+							페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?
+						</div>
+						<div class="satis_a">
+							<form action="http://sj2sj.dothome.co.kr/customs/html/openInfo.html" id="satis_form">
+								<ul>
+									<li>
+										<input type="radio" id="s5" name="score" value="5">
+										<label for="s5">매우만족</label>
+									</li>
+									<li>
+										<input type="radio" id="s4" name="score" value="4">
+										<label for="s4">만족</label>
+									</li>
+									<li>
+										<input type="radio" id="s3" name="score" value="3">
+										<label for="s3">보통</label>
+									</li>
+									<li>
+										<input type="radio" id="s2" name="score" value="2">
+										<label for="s2">불만족</label>
+									</li>
+									<li>
+										<input type="radio" id="s1" name="score" value="1">
+										<label for="s1">매우불만족</label>
+									</li>
+								</ul>
+								<label for="oo">기타의견 : </label> <input type="text" class="satis_text" id="oo" placeholder=" 의견을 입력해 주세요">
+								<input type="button" class="satis_btn" value="평가하기">
+							</form>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+
+			
+		</section>
+		<!-- content_wrap 끝 -->
+	</article>
+	<!-- // article 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer_site">
+			<div class="container">
+				<ul class="footer_info_link clearfix">
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">뷰어프로그램</a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#" class="red">개인정보처리방침</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">고객만족도조사</a></li>
+				</ul>
+				<ul class="footer_menu clearfix">
+					<li>
+						<a href="#">패밀리 사이트
+							<span class="plus_btn"></span>
+						</a>
+						<div class="family">
+							<ul>
+								<li>
+									<a href="#">UNI-PASS전자통관</a>
+								</li>
+								<li>
+									<a href="#">해외통관지원센터</a>
+								</li>
+								<li>
+									<a href="#">고객지원센터</a>
+								</li>
+								<li>
+									<a href="#">FTA 포털</a>
+								</li>
+								<li>
+									<a href="#">수출입무역통계</a>
+								</li>
+								<li>
+									<a href="#">관세법령정보포털</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">산하 세관
+							<span class="plus_btn"></span>
+						</a>
+						<div class="customs">
+							<ul>
+								<li>
+									<a href="#">인천본부세관</a>
+									<ul>
+										<li><a href="#">김포공항세관</a></li>
+										<li><a href="#">인천공항국제우편세관</a></li>
+										<li><a href="#">수원세관</a></li>
+										<li><a href="#">안산세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">서울본부세관</a>
+									<ul>
+										<li><a href="#">안양세관</a></li>
+										<li><a href="#">천안세관</a></li>
+										<li><a href="#">청주세관</a></li>
+										<li><a href="#">성남세관</a></li>
+										<li><a href="#">파주세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">부산본부세관</a>
+									<ul>
+										<li><a href="#">김해공항세관</a></li>
+										<li><a href="#">양산세관</a></li>
+										<li><a href="#">용당세관</a></li>
+										<li><a href="#">창원세관</a></li>
+										<li><a href="#">마산세관</a></li>
+										<li><a href="#">경남남부세관</a></li>
+										<li><a href="#">경남서부세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">대구본부세관</a>
+									<ul>
+										<li><a href="#">울산세관</a></li>
+										<li><a href="#">구미세관</a></li>
+										<li><a href="#">포항세관</a></li>
+										<li><a href="#">속초세관</a></li>
+										<li><a href="#">동해세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">광주본부세관</a>
+									<ul>
+										<li><a href="#">광양세관</a></li>
+										<li><a href="#">여수세관</a></li>
+										<li><a href="#">목포세관</a></li>
+										<li><a href="#">대전세관</a></li>
+										<li><a href="#">군산세관</a></li>
+										<li><a href="#">제주세관</a></li>
+										<li><a href="#">전주세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">평택세관</a>
+								</li>
+								<li>
+									<a href="#">중앙관세분석소</a>
+								</li>
+								<li>
+									<a href="#">관세평가분류원</a>
+								</li>
+								<li>
+									<a href="#">관세국경관리연수원</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<address class="address">
+			<div class="container clearfix">
+				<em class="footer_logo">
+					<img src="../assets/img/f_logo.png" alt="관세청">
+				</em>
+				<p class="post">
+					<span>(35208) 대전광역시 서구 청사로 189 정부대전청사 1동</span>
+					<span>홈페이지 문의 1544-1285</span>
+				</p>
+				<p class="copyright">
+					Copyright©Korea Customs Service. All Rights Reserved.
+				</p>
+			</div>
+		</address>
+
+		<button id="top_btn"></button>
+	</footer>
+	<!-- //footer -->
+
+
+
+	<!-- script -->
+	<script src="../assets/js/jquery.min_1.12.4.js"></script>
+    <script src="../assets/js/modernizr-custom.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/mySlick.js"></script>
+
+</body>
+</html>

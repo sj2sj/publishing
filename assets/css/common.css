@@ -104,21 +104,37 @@
 	content: '';
 	position: absolute; left: 0; top: -9px;
 	width: 70%; height: 2px;
-	background: #e40a2e;
+	background: #e40a2e; }
+
+
+.gnb_box {
+	position: relative; 
+	background: rgb(0, 34, 63); 
+	height: 50px; line-height: 50px;
 }
-
-
-.gnb_box {background: rgb(0, 34, 63); height: 50px; line-height: 50px;}
-.gnb_box ul {overflow: hidden;}
-.gnb_box ul li {position: relative; float: left; width: 20%; text-align: center; margin-left: -10px;}
-.gnb_box ul li a {display: block; color: #fff; font-size: 20px; font-weight: 500; letter-spacing: -1px}
-.gnb_box ul li:after {
+.gnb_box:hover .gnb_box_area {display: block;}
+.gnb_box:hover .gnb_depth1 {display: block;}
+.gnb_box_area {
+	display: none;
+	position: absolute; 
+	top: 50px; left: 0; 
+	z-index: 20;
+	background: #fff; 
+	width: 100%; 
+	border-bottom: 1px solid #ccc;
+	transition: all 0.2s ease;
+}
+.gnb_box .gnb_menu {overflow: hidden; margin-right: 50px; }
+.gnb_box .gnb_menu > li { position: relative; float: left; width: 20%; text-align: center;}
+.gnb_box .gnb_menu > li a {display: block; color: #fff; font-size: 20px; font-weight: 500; letter-spacing: -1px}
+.gnb_box .gnb_menu > li:after {
 	content: '';
 	position: absolute; top: 16px; right: 0;
 	width: 2px; height: 18px;
 	background: url('../img/icons/line_nav.png');
 }
-.gnb_box ul li:last-child:after {
+.gnb_box .gnb_menu > li:last-child .gnb_depth1 {border-right: 0; }
+.gnb_box .gnb_menu > li:last-child:after{
 	width: 0; height: 0;
 }
 .gnb_box .sitemap {
@@ -164,14 +180,96 @@
 }
 
 
-/* gnb 메뉴 깊이 ~~~ */
+/* gnb 메뉴 깊이 1 ~~~ */
 .gnb_box .gnb_depth1 {
 	display: none;
-	background: #fff;
-	z-index: 1000;
-	height: 389px
+	position: relative;
+	padding: 10px 0;
+	z-index: 30;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+
 }
 
+.gnb_box .gnb_depth1 .menuOn {background: #053863;}
+.gnb_box .gnb_depth1 .menuOn > a {color: #fff;}
+.gnb_box .gnb_depth1 .menuOn:before {background-color: #fff;}
+.gnb_box .gnb_depth1 .menuOn:after {background-color: #fff; transform: rotate(0deg); transition: all 0.3s ease;}
+.gnb_box .gnb_depth1 .menuOn > .gnb_depth2 {display: block; }
+.gnb_box .gnb_depth1 .menuOn > .gnb_depth2 li {opacity: 1; transition: opacity 0.5s ease;}
+
+
+.gnb_box .gnb_depth1:hover {
+	background: #e2e7ec;
+	transition: background 0.5s ease;
+}
+
+
+.gnb_box .gnb_depth1 li {
+	position: relative;
+	float: none;
+	width: auto;
+	text-align: left;
+}
+
+.gnb_box .gnb_depth1 li:hover {
+	background: #053863;
+}
+
+.gnb_box .gnb_depth1 li:hover:before {background-color: #fff;}
+.gnb_box .gnb_depth1 li:hover:after {background-color: #fff;}
+
+.gnb_box .gnb_depth1 li:hover > a {color: #fff;}
+
+.gnb_box .gnb_depth1 li:before {
+	position: absolute;
+	content: '';
+	top: 20px; right: 25px;
+	width: 10px; height: 1px;
+	background: #333;
+}
+
+.gnb_box .gnb_depth1 li:after {
+	position: absolute;
+	content: '';
+	top: 20px; right: 25px;
+	transform: rotate(90deg);
+	width: 10px; height: 1px;
+	background: #333;
+}
+
+.gnb_box .gnb_depth1 li a {
+	font-size: 15px;
+	color: #333;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+
+/* gnb 메뉴 깊이 2 ~~~ */
+.gnb_box .gnb_depth2 {background: #fff; display: none; z-index: 30;}
+
+.gnb_box .gnb_depth2 li {opacity: 0; transition: opacity 1s ease;}
+
+.gnb_box .gnb_depth2 li:hover {background: #fff;}
+.gnb_box .gnb_depth1 li:hover:before {background-color: #999;}
+.gnb_box .gnb_depth2 li:hover a {text-decoration: underline; color: #333;}
+
+.gnb_box .gnb_depth2 li:before {
+	position: absolute; 
+	content: ''; 
+	top: 50%; left: 10px;
+	width: 2px; height: 2px; 
+	border-radius: 50%; 
+	background: #999;
+}
+.gnb_box .gnb_depth2 li:after {width: 0; height: 0;}
+
+.gnb_box .gnb_depth2 li a {
+	font-size: 14px;
+	line-height: 30px;
+	color: #333;
+}
 
 
 
@@ -184,7 +282,7 @@
 .banner_box1 .control-btn {
 	position: absolute;
 	right: 72px; bottom: 0;
-	z-index: 10;
+	z-index: 3;
 	background: rgba(0,0,0,0.5);
 	transition: all 0.3s ease;
 }
@@ -202,7 +300,7 @@
 	position: absolute;
 	width: 35px; height: 35px;
 	right: 0; bottom: 0;
-	z-index: 10;
+	z-index: 3;
 	background: rgba(0,0,0,0.7);
 	text-align: center;
 }
@@ -221,7 +319,7 @@
 	width: 35px; height: 35px;
 	background: rgba(0,0,0,0.5) url('../img/icons/btn_prev.png') no-repeat center;
 	text-indent: -9999px;
-	z-index: 10;
+	z-index: 3;
 	transition: all 0.3s ease;
 }
 .banner_box1 .slick-container .slick-next {
@@ -230,7 +328,7 @@
 	width: 35px; height: 35px;
 	background: rgba(0,0,0,0.5) url('../img/icons/btn_next.png') no-repeat center;
 	text-indent: -9999px;
-	z-index: 10;
+	z-index: 3;
 	transition: all 0.3s ease;
 }
 .banner_box1 .slick-container .slick-slide a img {
@@ -784,18 +882,19 @@
 .footer_site ul.footer_menu > li {position: relative; float: left; border-right: 1px solid #b9b9b9; }
 .footer_site ul.footer_menu > li:first-child {border-left: 1px solid #b9b9b9; }
 .footer_site ul.footer_menu > li > a {display: block; font-size: 15px; font-weight: 300; padding: 0 180px 0 30px; line-height: 50px;}
-.footer_site ul.footer_menu > li > a span {}
 .footer_site ul.footer_menu > li > a span.plus_btn {
 	position: absolute; top: 50%; right: 20px;
 	content: '';
 	display: block;
-	width: 17px; height: 1px; background: #555; 
+	width: 17px; height: 1px; background: #555;
 }
+.footer_site ul.footer_menu > li.active a span.plus_btn:after {transform: rotate(90deg);}
 .footer_site ul.footer_menu > li > a span.plus_btn:after {
 	position: relative; top: -8px; right: -8px;
 	display: block;
 	content: '';
-	width: 1px; height: 17px; background: #555; 
+	width: 1px; height: 17px; background: #555;
+	transition: all 0.3s ease;
 }
 
 .footer_site ul.footer_menu > li > div {
@@ -870,9 +969,24 @@
 .address .copyright {vertical-align: middle; color: #6d6d6d; font-size: 14px; font-weight: 300;}
 
 
+#top_btn {
+	position: fixed;
+	right: 1%; bottom: 10px;
+	width: 70px; height: 70px;
+	background: rgba(0,0,0,0.5) url('../img/icons/btn_topmove.png') no-repeat center center;
+	display: none;
+	z-index: 1000;
+}
+
+
+/* 달력 시작 */
+img.ui-datepicker-trigger {width: auto; cursor: pointer;}
+/* 달력 끝 */
 
 
 
+.mt0 {margin-top: 0 !important;}
+.pl35 {padding-left: 35px !important;}
 
 
 /*=============== 미디어 쿼리 ===============*/
@@ -1099,4 +1213,9 @@
 
 	.return_box ul.return_report li {width: 100%;}
 
+}
+
+
+/* 0~360px */
+@media (max-width: 360px) {
 }
