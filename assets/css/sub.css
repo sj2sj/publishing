@@ -1,0 +1,159 @@
+
+
+/* breadcrumbs 공통 */
+.breadcrumbs {height: 30px; background: rgb(105,81,157);}
+.breadcrumbs ul {overflow: hidden;}
+.breadcrumbs ul li {position: relative; float: left; padding-right: 40px;}
+.breadcrumbs ul li:after {
+	position: absolute;
+	content: '';
+	top: 50%; right: 17px;
+	width: 4px; height: 7px;
+	transform: translateY(-50%);
+	background: url('../img/icons/img_arr_location.png');
+}
+.breadcrumbs ul li:last-child:after {width: 0; height: 0;}
+.breadcrumbs ul li a {color: #fff; line-height: 30px; font-size: 12px;}
+/* 공통 끝 */
+
+
+/* 컨텐츠 */
+.content_wrap {	margin: 60px 0; font-family: 'NanumBarunGothic';}
+.content_wrap .contact_area {
+	padding: 40px 0;
+	background: rgb(238,238,238);
+	width: 100%;
+	text-align: center;
+}
+.contact_area .br_hidden {display: none;}
+.contact_area strong {display: block; font-size: 20px; letter-spacing: -0.03em; padding-bottom: 3px; font-weight: 500;}
+.contact_area .contact_btn {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 15px 0;
+	color: #fff;
+	font-size: 16px;
+	background: rgb(243,130,0);
+}
+.contact_area p {font-size: 14px;}
+
+
+.noti_area {display: block; margin: 60px 0; font-size: 20px; font-weight: 500; text-align: center;}
+.noti_area .br_hidden {display: none;}
+
+.login_area {position: relative; float: left; width: 550px; height: 280px; padding-right: 50px; border-right: 1px solid #dbdbdb ;}
+.login_area ul li {
+	float: left; 
+	width: 50%; height: 40px; 
+	background: rgb(238,238,238) url('../img/icons/bg_select3.png') 100% 50% no-repeat;
+	border-bottom: 1px solid rgb(105,81,157);
+	box-sizing: border-box;
+}
+.login_area ul li.active {background: #fff url('../img/icons/bg_select3_on.png') 100% 50% no-repeat; border: 1px solid rgb(105,81,157); border-bottom: 0; font-size: 14px;}
+.login_area ul li a {display: block; padding: 0 30px; line-height: 40px;}
+.login_area ul li.active a {color: rgb(105,81,157);}
+.login_area ul li.active > div {display: block;}
+.login_area ul li > div {
+	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	width: calc(100% - 50px);
+	margin-top: 80px;
+}
+
+.login_space > p {margin-left: 70px;}
+
+.login_input {float: left; width: 60%; margin-bottom: 20px;}
+.login_input p {margin-bottom: 5px; fll}
+.login_input label {display: inline-block; width: 20%;}
+.login_input input[type="text"], .login_input input[type="password"] {
+	width: 70%;
+	padding: 5px 0;
+	background: rgb(238,238,238);
+	border: 1px solid rgb(204,204,204);
+}
+.login_input input[type="text"]::placeholder, .login_input input[type="password"]::placeholder {padding-left: 10px; color: transparent;}
+.login_area input[type="checkbox"] {width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;}
+
+.login_area .login_btn {display: inline-block; cursor: pointer; width: 40%; margin-bottom: 20px; padding: 25px 0; font-size: 15px; color: #fff; background: rgb(243,130,0); border: 0;}
+.login_area .login_noti {margin-left: 70px;}
+
+
+
+.join_area {float: left; width: 540px; padding-left: 50px;}
+.join_area ul li { height: 120px;}
+.join_area ul li div {position: relative; padding-left: 130px;}
+.join_area ul li div img {
+	position: absolute;
+	top: 0; left: 0;
+	width: auto;
+}
+.join_area ul li div strong {display: block; font-weight: 500;}
+.join_area ul li div .str {font-size: 14px;}
+.join_area ul li div .str .br_hidden {display: none;}
+.join_area ul li div a {
+	display: inline-block;
+	width: 150px;
+	background: #fff;
+	padding: 5px 10px;
+	margin: 20px 5px 0 0;
+	text-align: center;
+	color: rgb(130,130,130);
+	border: 1px solid rgb(204,204,204);
+	box-sizing: border-box;
+}
+
+
+
+/* 컨텐츠 끝 */
+
+
+
+/*===================== 미디어 쿼리 =====================*/
+/* 0~1200px */
+@media (max-width: 1200px) {
+	.breadcrumbs > .container {width: 95%;}
+	.content_wrap > .container {width: 95%;}
+
+	.login_area {width: 100%; height: 300px; border-right: 0; padding-right: 0;}
+	.login_area ul li > div {width: 100%; margin-top: 60px;}
+
+	.login_input {width: 100%;}
+	.login_input label {display: none;}
+	.login_input input[type="text"], .login_input input[type="password"] {width: 100%;}
+	.login_input input[type="text"]::placeholder, .login_input input[type="password"]::placeholder { color: #888;}
+
+	.login_area .login_btn {width: 100%; padding: 5px 0 ;}
+	.login_space > p {margin-left: 0;}
+	.login_area .login_noti {margin-left: 0;}
+
+
+
+	.join_area {width: 100%; padding-left: 0;}
+
+	.join_area ul {}
+
+	.join_area ul li {position: relative; height: auto; padding: 30px 0; border-top: 1px solid #dbdbdb;}
+	.join_area ul li div {width: 280px; margin: 0 auto; box-sizing: border-box;}
+	.join_area ul li div img {top: 50%; transform: translateY(-50%);}
+	.join_area ul li div .str .br_hidden {display: block;}
+	.join_area ul li div strong.orange {display: none; }
+
+	.join_area ul li div a {display: block; margin: 4px 0 0 0;}
+}
+
+
+/* 0~768px */
+@media (max-width: 780px) {
+	
+	.contact_area .br_hidden {display: block;}
+	.contact_area strong {font-size: 16px;}
+	.contact_area .contact_btn {font-size: 14px; padding: 7px 24px;}
+	.contact_area p {font-size: 13px;}
+
+	.noti_area {font-size: 16px;}
+	.noti_area .br_hidden {display: block;}
+
+	.login_area ul li a {padding: 0 20px;}
+	.login_area ul li a .txt_hidden {display: none;}
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="sjsj">
+
+	<title>COFFEE BEAN 로그인_클론코딩</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/swiper.css">
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico">
+    
+</head>
+<body>
+
+
+	<!-- #header -->
+	<header id="header">
+		<!-- top_menu -->
+		<nav class="top_menu">
+			<div class="container">
+				<div class="row">
+					<ul>
+						<li><a href="html/login.html">로그인</a></li>
+						<li><a href="#">매장찾기</a></li>
+						<li><a href="#">채용정보</a></li>
+						<li><a href="#">단체 및 기업구매</a></li>
+						<li><a href="#">고객서비스</a></li>
+						<li class="top_menu_logo">
+							<a href="http://sj2sj.dothome.co.kr/coffeebean/">
+							<img class="user_info_img" src="../assets/img/icons/ico_user_info_line.png" alt="회원 정보">
+							<img class="m_user_info_img" src="../assets/img/icons/ico_user_info_w_off_m.png" alt="회원 정보">
+							</a>
+						</li>
+						<li class="top_menu_cart">
+							<a href="#">
+								<img src="../assets/img/icons/ico_bag_m.png" alt="장바구니">
+								<span class="cart_num">0</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- //top_menu -->
+
+		<!-- sub_menu -->
+		<nav class="sub_menu">
+			<div class="container">
+				<div class="row clearfix">
+					<a class="menu_btn" href="#">
+						<img src="../assets/img/icons/btn_menu.svg" alt="메뉴">
+					</a>
+					<h1 class="sub_menu_logo">
+						<a href="http://sj2sj.dothome.co.kr/coffeebean/"> <img src="../assets/img/icons/logo.svg" alt="COFFEE BEAN"> </a>
+					</h1>
+					
+					<!-- sub_text_box -->
+					<div class="sub_text_box">
+						<ul>
+							<li class="buy_online">
+								<a href="#">BUY ONLINE</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#">View All</a></li>
+										<li class="ln"><a class="m_title" href="#">멤버스몰</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">커피</a></li>
+										<li class="orange_bar"><a class="orange" href="#">원두가이드</a></li>
+										<li><a href="#">MD's Pick</a></li>
+										<li><a href="#">라이트 로스트</a></li>
+										<li><a href="#">미디엄 로스트</a></li>
+										<li><a href="#">다크 로스트</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">티</a></li>
+										<li class="orange_bar"><a class="orange" href="#">티 가이드</a></li>
+										<li><a href="#">클래식티</a></li>
+										<li><a href="#">허브티</a></li>
+										<li><a href="#">프룻티</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">상품</a></li>
+										<li><a href="#">소풍커피</a></li>
+										<li><a href="#">스틱커피</a></li>
+										<li><a href="#">아이스 텀블러</a></li>
+										<li><a href="#">보온 텀블러</a></li>
+										<li><a href="#">머그</a></li>
+										<li><a href="#">파우더</a></li>
+										<li><a href="#">푸드</a></li>
+										<li><a href="#">기타상품</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">CBTL시스템</a></li>
+										<li><a href="#">CBTL 머신</a></li>
+										<li><a href="#">캡슐</a></li>
+										<li><a href="#">액세서리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="members_club">
+								<a href="#">MEMBER`S CLUB</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#">커피빈 멤버스 클럽</a></li>
+										<li><a href="#">멤버스 클럽</a></li>
+										<li><a href="#">커피빈 카드</a></li>
+										<li><a href="#">커피빈 e-Gift</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">나의 커피빈</a></li>
+										<li><a href="#">나의 콩/e쿠폰 보기</a></li>
+										<li><a href="#">나의 커피빈 카드</a></li>
+										<li><a href="#">커피빈 카드 등록</a></li>
+										<li><a href="#">분실신고/환불신청</a></li>
+										<li><a href="#">e-Gift 구매</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">멤버스몰</a></li>
+										<li><a href="#">멤버스몰 소개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu">
+								<a href="#">MENU</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#">음료</a></li>
+										<li><a href="#">티</a></li>
+										<li><a href="#">티 라떼</a></li>
+										<li><a href="#">에스프레소 음료</a></li>
+										<li><a href="#">아이스 블렌디드 (Coffee)</a></li>
+										<li><a href="#">아이스 블렌디드 (Non-Coffee)</a></li>
+										<li><a href="#">브루드 커피</a></li>
+										<li><a href="#">커피빈 주스(병음료)</a></li>
+										<li><a href="#">기타 제조 음료</a></li>
+										<li><a href="#">엑스트라</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">푸드</a></li>
+										<li><a href="#">베이커리</a></li>
+										<li><a href="#">케익</a></li>
+										<li><a href="#">샌드위치</a></li>
+										<li><a href="#">기타</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">상품</a></li>
+										<li><a href="#">아이스 텀블러</a></li>
+										<li><a href="#">보온 텀블러</a></li>
+										<li><a href="#">머그</a></li>
+										<li><a href="#">소풍커피</a></li>
+										<li><a href="#">스틱커피</a></li>
+										<li><a href="#">파우더</a></li>
+										<li><a href="#">기타상품</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">카드</a></li>
+										<li><a href="#">e-Gift 카드</a></li>
+										<li><a href="#">실물 카드</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="store">
+								<a href="#">STORE</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#"></a>매장 찾기</li>
+										<li><a href="#"></a>신규 매장</li>
+									</ul>
+								</div>
+							</li>
+							<li class="the_coffee_bean">
+								<a href="#">THE COFFEE BEAN</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#">커피빈 코리아</a></li>
+										<li><a href="#">Simply the Best</a></li>
+										<li><a href="#">커피빈 커피와 티</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">커피빈 소식</a></li>
+										<li><a href="#">새소식</a></li>
+										<li><a href="#">프로모션</a></li>
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">소셜미디어</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">사회공헌</a></li>
+										<li><a href="#">국제 사회공헌</a></li>
+										<li><a href="#">필리핀 청소년 교육혜택 지원하기</a></li>
+										<li><a href="#">성경원, 나눔의 샘 후원 결연</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">채용안내</a></li>
+										<li><a href="#">채용안내 바로가기</a></li>
+										<li><a href="#">채용카테고리</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">신규 입점 제의</a></li>
+										<li class="ln"><a class="m_title" href="#">결산공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="cbtl">
+								<a href="#">CBTL</a>
+								<div class="sub_drop_down">
+									<ul>
+										<li><a href="#">CBTL 가이드</a></li>
+										<li><a href="#">CBTL 서비스</a></li>
+										<li><a href="#">AS 안내</a></li>
+										<li><a href="#">AS 신청</a></li>
+										<li><a href="#">CBTL FAQ</a></li>
+										<li><a href="#">제품설명서</a></li>
+										<li><a href="#">기업용 머신</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //sub_text_box -->
+
+					<div class="sub_search_box">
+						<a href="#">
+							<img src="../assets/img/icons/ico_search.png" alt="검색창 열기">
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- //sub_menu -->
+	</header>
+	<!-- //#header -->
+
+
+	<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li><a href="http://sj2sj.dothome.co.kr/coffeebean/">홈</a></li>
+				<li><a href="#">로그인 / 문의하기</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //breadcrumbs -->
+
+	
+	<!-- content_wrap -->
+	<section class="content_wrap">
+		<div class="container clearfix">
+			<div class="contact_area">
+				<strong>질문 또는 건의 사항이 있으신가요?<br class="br_hidden"> 이용에 불편한 점이 있으신가요?</strong>
+				<strong class="orange">고객의 소리에 귀 기울이는<br class="br_hidden"> 커피빈 코리아가 되겠습니다.</strong>
+				<a class="contact_btn" href="#">비회원 문의하기</a>
+				<p class="orange">* 커피빈 회원이시라면 아래 ‘회원 로그인’ 후<br class="br_hidden"> 문의사항을 남겨주세요.</p>
+			</div>
+
+			<strong class="noti_area">대한민국에서 가장 맛있는 커피,<br class="br_hidden"> 커피빈의 회원이 되시면 <br>
+				커피빈멤버스클럽의 <em class="orange">다양한 서비스</em>와<br class="br_hidden"> <em class="orange">혜택</em>을 누리실 수 있습니다.
+			</strong>
+
+
+			<div class="login_area">
+				<form action="http://sj2sj.dothome.co.kr/coffeebean/html/login.html">
+					<ul class="clearfix">
+						<li class="active">
+							<a href="#">회원로그인</a>
+							<div class="login_space clearfix">
+								
+									<div class="login_input">
+										<p>
+											<label for="id">아이디</label>
+											<input type="text" id="id" placeholder="아이디">
+										</p>
+										<p>
+											<label for="pwd">비밀번호</label>
+											<input type="password" id="pwd" placeholder="비밀번호">
+										</p>
+									</div>
+									<input class="login_btn" type="button" value="로그인">
+									<p>
+										<input type="checkbox" id="idSave">
+										<label for="idSave">아이디 저장</label>
+									</p>
+								
+							</div>
+						</li>
+						<li>
+							<a href="#">비회원 로그인<span class="txt_hidden">(주문/배송 조회)</span></a>
+							<div class="nm_login_space">
+								<div class="login_input">
+									<p>
+										<label for="id2">주문자명</label>
+										<input type="text" id="id2" placeholder="주문자명">
+									</p>
+									<p>
+										<label for="pwd2">주문번호</label>
+										<input type="text" id="pwd2" placeholder="주문번호">
+									</p>
+								</div>
+								<input class="login_btn" type="button" value="비회원 주문/배송조회">
+								<p class="login_noti orange">* 비회원 구매시 회원과 동일한 서비스 정책이 적용됩니다.</p>
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+
+
+			<div class="join_area">
+				<ul>
+					<li>
+						<div>
+							<img src="../assets/img/icons/img_bg1.jpg" alt="회원가입 아이콘">
+							<strong class="str">아직 커피빈 코리아의<br class="br_hidden"> 회원이 아니신가요?</strong>
+							<strong class="orange">커피빈 코리아 회원만의 특별한 혜택을 누릴 수 있습니다.</strong>
+							<p>
+								<a href="#">회원가입하기</a>
+								<a href="#">멤버스클럽 혜택보기</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="../assets/img/icons/img_bg2.jpg" alt="회원가입 아이콘">
+							<strong class="str">아이디 / 비밀번호를<br class="br_hidden"> 잊으셨나요?</strong>
+							<strong class="orange">고객님의 본인 명의 휴대폰 인증 또는 아이핀 인증으로 찾을 수 있습니다.</strong>
+							<p>
+								<a href="#">아이디 / 비밀번호 찾기</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		</div>
+	</section>
+	<!-- //content_wrap -->
+
+
+
+	<!-- footer -->
+	<footer id="footer">
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="container">
+				<div class="row clearfix">
+					<ul>
+						<li>Buy Online</li>
+						<li><a href="#">VIEW ALL</a></li>
+						<li><a href="#">커피</a></li>
+						<li><a href="#">티</a></li>
+						<li><a href="#">CBTL 시스템</a></li>
+						<li><a href="#">상품</a></li>
+						<li><a href="#">멤버스몰</a></li>
+					</ul>
+					<ul>
+						<li>Member`s Club</li>
+						<li><a href="#">커피빈 멤버스 클럽</a></li>
+						<li><a href="#">나의 커피빈</a></li>
+						<li><a href="#">멤버스 몰</a></li>
+					</ul>
+					<ul>
+						<li>Menu</li>
+						<li><a href="#">음료</a></li>
+						<li><a href="#">푸드</a></li>
+						<li><a href="#">상품</a></li>
+						<li><a href="#">카드</a></li>
+					</ul>
+					<ul>
+						<li>Store</li>
+						<li><a href="#">매장 찾기</a></li>
+						<li><a href="#">신규 매장</a></li>
+					</ul>
+					<ul>
+						<li>The Coffee Bean</li>
+						<li><a href="#">커피빈 코리아</a></li>
+						<li><a href="#">커피빈 소식</a></li>
+						<li><a href="#">사회 공헌</a></li>
+						<li><a class="bold" href="#">제휴 마케팅 제안</a></li>
+						<li><a href="#">채용 안내</a></li>
+						<li><a href="#">신규 입점 제의</a></li>
+						<li><a href="#">결산공고</a></li>
+					</ul>
+					<ul>
+						<li>CBTL</li>
+						<li><a href="#">CBTL 가이드</a></li>
+						<li><a href="#">CBTL 서비스</a></li>
+						<li><a href="#">AS 안내</a></li>
+						<li><a href="#">AS 신청</a></li>
+						<li><a href="#">CBTL FAQ</a></li>
+						<li><a href="#">제품설명서</a></li>
+						<li><a href="#">기업용 머신</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //footer_menu -->
+		<!-- footer_sns -->
+		<div class="footer_sns">
+			<div class="container">
+				<div class="sns_ico">
+					<ul>
+						<li><a href="#"><img src="../assets/img/icons/ico_facebook.png" alt="facebook"></a></li>
+						<li><a href="#"><img src="../assets/img/icons/ico_instagram.png" alt="instagram"></a></li>
+						<li><a href="#"><img src="../assets/img/icons/ico_blog.png" alt="blog"></a></li>
+						<li><a href="#"><img src="../assets/img/icons/ico_twitter.png" alt="twitter"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //footer_sns -->
+		<!-- footer_info -->
+		<div class="footer_info">
+			<div class="container">
+				<div class="row">
+					<ul>
+						<li><a href="#">홈페이지 이용약관</a></li>
+						<li><a class="orange" href="#">개인정보처리방침</a></li>
+						<li><a href="#">영상정보처리기기운영방침</a></li>
+						<li><a href="#">멤버스카드이용약관</a></li>
+						<li><a href="#">위치기반서비스 이용약관</a></li>
+					</ul>
+					<address>
+						<ul>
+							<li>(주)커피빈코리아 대표이사 박상배</li>
+							<li>사업자등록번호 120-86-07029</li>
+							<li>통신판매업신고 제 2010-서울강남-00560</li>
+						</ul>
+						<ul>
+							<li>서울시 강남구 봉은사로 99길 7</li>
+							<li>고객센터 02-1577-4708 (09:00 - 18:00)</li>
+							<li>E-mail : cbk@coffeebeankorea.com</li>
+						</ul>
+						<p>호스팅사업자 : SK브로드밴드</p> 
+						<p>ⓒ 2016. The Coffee Bean. All rights reserved.</p>
+					</address>
+				</div>
+			</div>
+		</div>
+		<!-- //footer_info -->
+
+		<!-- top button -->
+		<button id="top_btn"></button>
+	</footer>
+	<!-- //footer -->
+
+
+
+
+
+
+
+
+
+	<!-- 자바 스크립트 라이브러리 -->
+	<script src="../assets/js/jquery.min_1.12.4.js"></script>
+	<script src="../assets/js/modernizr-custom.js"></script>
+	<script src="../assets/js/swiper.min.js"></script>
+	<script src="../assets/js/mySwiper.js"></script>
+	<script src="../assets/js/common.js"></script>
+
+
+	
+  	<script>
+
+		
+
+  		
+		
+
+
+
+
+
+
+  	</script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 	<meta property="og:title" content="커피빈 퍼블리싱">
     <meta property="og:description" content="커피빈 퍼블리싱 사이트입니다.">
     <meta property="og:url" content="https://github.com/sj2sj/coffeebean" />
-	<title>COFFEE BEAN 따라 만들어보기</title>
+	<title>COFFEE BEAN 클론 코딩</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
@@ -31,13 +31,13 @@
 			<div class="container">
 				<div class="row">
 					<ul>
-						<li><a href="#">로그인</a></li>
+						<li><a href="html/login.html">로그인</a></li>
 						<li><a href="#">매장찾기</a></li>
 						<li><a href="#">채용정보</a></li>
 						<li><a href="#">단체 및 기업구매</a></li>
 						<li><a href="#">고객서비스</a></li>
 						<li class="top_menu_logo">
-							<a href="#">
+							<a href="http://sj2sj.dothome.co.kr/coffeebean/">
 							<img class="user_info_img" src="assets/img/icons/ico_user_info_line.png" alt="회원 정보">
 							<img class="m_user_info_img" src="assets/img/icons/ico_user_info_w_off_m.png" alt="회원 정보">
 							</a>
@@ -62,7 +62,7 @@
 						<img src="assets/img/icons/btn_menu.svg" alt="메뉴">
 					</a>
 					<h1 class="sub_menu_logo">
-						<a href="#"> <img src="assets/img/icons/logo.svg" alt="COFFEE BEAN"> </a>
+						<a href="http://sj2sj.dothome.co.kr/coffeebean/"> <img src="assets/img/icons/logo.svg" alt="COFFEE BEAN"> </a>
 					</h1>
 					
 					<!-- sub_text_box -->
@@ -819,6 +819,9 @@
 			</div>
 		</div>
 		<!-- //footer_info -->
+		
+		<!-- top button -->
+		<button id="top_btn"></button>
 	</footer>
 	<!-- //footer -->
 
@@ -834,6 +837,8 @@
 	<script src="assets/js/jquery.min_1.12.4.js"></script>
 	<script src="assets/js/modernizr-custom.js"></script>
 	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/mySwiper.js"></script>
+	<script src="assets/js/common.js"></script>
 
 
 	
@@ -841,110 +846,7 @@
 
 		
 
-  		//Initialize Swiper 
-	    var swiper = new Swiper('.swiper-container', {
-			effect : 'fade',
-
-	    	navigation: {
-			    nextEl: '.swiper-button-next',
-			    prevEl: '.swiper-button-prev',
-			},
-
-			loop: true,
-
-		    autoplay: {
-				delay: 5000,
-			},
-	    });
-
-	    var swiper2 = new Swiper('.swiper-container2', {
-		    slidesPerView: 4,
-		    slidesPerGroup : 4,
-		    spaceBetween: 24,
-		    pagination: {
-			    el: '.swiper-pagination2',
-			    clickable: true,
-		    },
-		    autoplay: {
-		    	delay: 5000
-		    },
-		    speed: 2800,
-
-		    breakpoints: {
-		    	1200: {
-		    		slidesPerView: 3,
-				    slidesPerGroup : 3,
-				    spaceBetween: 20
-		    	}
-		    	, 768: {
-		    		slidesPerView: 2,
-				    slidesPerGroup : 2,
-				    spaceBetween: 20
-		    	}
-		    }
-		});
-
-
-	    var swiper3 = new Swiper('.swiper-container3', {
-		    slidesPerView: 3,
-		    slidesPerGroup : 3,
-		    spaceBetween: 24,
-		    pagination: {
-			    el: '.swiper-pagination3',
-			    clickable: true,
-		    },
-		    autoplay: {
-		    	delay: 5000
-		    },
-		    speed: 2800,
-		    breakpoints: {
-		    	1200: {
-		    		slidesPerView: 2,
-				    slidesPerGroup : 2,
-				    spaceBetween: 30
-		    	}
-		    	, 768: {
-		    		slidesPerView: 1,
-				    slidesPerGroup : 1,
-				    spaceBetween: 30
-		    	}
-		    }
-		 });
-
-	    
-
-
-	    //swiper stop&start
-		var control_btn = $('.control-btn');
-		var control_btn2 = $('.control-btn2');
-
-		
-		function changeBtn(e) {
-			e.preventDefault();
-			var target = $(this);
-			var swiper_gbn;
-
-			//배너 슬라이드 구분
-			if (target.parent().hasClass('control-btn')) {
-				swiper_gbn = swiper2;
-			} else if (target.parent().hasClass('control-btn2')) {
-				swiper_gbn = swiper3;
-			}
-
-			// console.log(target);
-		 	if (target.attr('class') == 'sw_stop') {
-		 		swiper_gbn.autoplay.stop();
-		 		target.removeClass('sw_stop').addClass('sw_start');
-		 		target.find('img').attr('src', 'assets/img/icons/btn_play.png');
-		 	} else if (target.attr('class') == 'sw_start') {
-		 		swiper_gbn.autoplay.start();
-		 		target.removeClass('sw_start').addClass('sw_stop');
-		 		target.find('img').attr('src', 'assets/img/icons/btn_pause.png');
-		 	}
-		};
-
-		control_btn.find('a').click(changeBtn);
-		control_btn2.find('a').click(changeBtn);
+  		
 		
 
 
