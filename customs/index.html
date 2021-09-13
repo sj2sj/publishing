@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="sjsj">
+
+	<meta property="og:title" content="관세청 퍼블리싱">
+    <meta property="og:description" content="관세청 퍼블리싱 사이트입니다.">
+    <meta property="og:url" content="https://github.com/sj2sj/customs" />
+	<title>관세청 클론코딩</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/favi/favicon.ico">
+
+</head>
+<body>
+	
+
+	<!-- 헤더 -->
+	<!-- header -->
+	<header id="header">
+		<div class="header_area">
+			<div class="container">
+				<!-- logo -->
+				<h1 class="logo">
+					<a href="http://sj2sj.dothome.co.kr/customs/">
+						<img src="assets/img/logo.png" alt="관세청">
+					</a>
+				</h1>
+				<p class="logo_text">
+					<a href="#">
+						<img src="assets/img/logo2.png" alt="국민의 나라 정의로운 대한민국">
+					</a>
+				</p>
+				<p class="logo_innogov">
+					<a href="#">
+						<img src="assets/img/img_innogov.png" alt="정부혁신 보다 나은 정부">
+					</a>
+				</p>
+				<!-- //logo 끝 -->
+
+				<!-- util_box 상단 유틸 메뉴 -->
+				<nav class="util_box">
+					<h2 class="ir_so">상단 유틸 박스</h2>
+					<ul>
+						<li class="home">
+							<a href="#">
+								<img src="assets/img/icons/ico_home_toputil.png" alt="홈페이지">
+							</a>
+						</li>
+						<li class="bar">
+							<a href="#">
+								<img src="assets/img/icons/img_taegeukgi.png" alt="국가상징">
+								<span>국가상징</span>
+							</a>
+						</li>
+						<li class="bar">
+							<a href="#">
+								<span>ENGLISH</span>
+								<img src="assets/img/icons/ico_blank.png" alt="영문 페이지">
+							</a>
+						</li>
+						<li class="bar pr2 sns_icon">
+							<a href="https://blog.naver.com/prologue/PrologueList.nhn?blogId=k_customs">
+								<img src="assets/img/icons/ico_snsB.png" alt="블로그">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://www.facebook.com/ftacustoms/">
+								<img src="assets/img/icons/ico_snsF.png" alt="페이스북">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://twitter.com/koreacustoms">
+								<img src="assets/img/icons/ico_snsT.png" alt="트위터">
+							</a>
+						</li>
+						<li class="pr2 sns_icon">
+							<a href="https://www.youtube.com/user/koreacustoms">
+								<img src="assets/img/icons/ico_snsY.png" alt="유튜브">
+							</a>
+						</li>
+						<li class="sns_icon">
+							<a href="https://www.instagram.com/korea_customs/">
+								<img src="assets/img/icons/ico_snsI.png" alt="인스타그램">
+							</a>
+						</li>
+						<li class="bar page_plus">
+							<a href="#">
+								<img src="assets/img/icons/btn_Tplus.png" alt="페이지 확대">
+							</a>
+						</li>
+						<li class="page_minus">
+							<a href="#">
+								<img src="assets/img/icons/btn_Tminus.png" alt="페이지 축소">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //util_box 상단 유틸 메뉴 끝 -->
+
+				<!-- search_box 검색창 -->
+				<div class="search_box">
+					<h2 class="ir_so">통합검색</h2>
+					<form id="search_form" class="s_form">
+						<fieldset>
+							<legend class="ir_so">통합검색</legend>
+							<input class="search_text" type="text" placeholder="검색어를 입력하세요">
+							<button class="search_btn" type="submit"><span class="ir_wa">통합검색</span></button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- mobile_search -->
+				<a href="#" class="m_search"> </a>
+				<!-- //search_box 검색창 끝 -->
+				<a href="#" class="m_menu"> <span></span> </a>
+			</div>
+		</div>
+
+		<!-- 메뉴 -->
+		<nav class="gnb_box">
+			<div class="gnb_box_area"></div>
+			<h2 class="ir_so">메뉴</h2>
+			<div class="container">
+				<ul class="gnb_menu">
+					<li>
+						<a href="#">정보공개</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">정보공개 제도</a>
+								<ul class="gnb_depth2">
+									<li><a href="http://sj2sj.dothome.co.kr/customs/html/openInfo.html">정보공개 제도 안내</a></li>
+									<li><a href="#">비공개 대상정보 세부기준</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">사전정보 공표</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">사전정보공표 공표목록</a></li>
+									<li><a href="#">고액상습 체납자 명단공개</a></li>
+									<li><a href="#">부패 공직자 제재현황</a></li>
+									<li><a href="#">불법 마약류 정보</a></li>
+									<li><a href="#">정책 실명제</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">정보목록</a>
+								<ul class="gnb_depth2">
+									<li><a href="http://sj2sj.dothome.co.kr/customs/html/infoList.html">정보목록 공개</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">공공 데이터 개방</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">공공 데이터 제공신청</a></li>
+									<li><a href="#">공공 데이터 오류신고</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">관세행정</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">수출입 통관</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">수입 통관</a></li>
+									<li><a href="#">수출 통관</a></li>
+									<li><a href="#">특송물품 통관</a></li>
+									<li><a href="#">우편물 통관</a></li>
+									<li><a href="#">수입물품 가격신고 제도</a></li>
+									<li><a href="#">납세신고 및 납부방법</a></li>
+									<li><a href="#">관세감면 및 감면물품 사후관리</a></li>
+									<li><a href="#">지식재산권 보호</a></li>
+									<li><a href="#">신고/제출서류 보관</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">FTA</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">자유무역협정(FTA)란?</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">개인 통관</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">해외직구(전자상거래) 통관절차</a></li>
+									<li><a href="#">해외직구물품 관세환급</a></li>
+									<li><a href="#">여행자 휴대품 통관</a></li>
+									<li><a href="#">입국장 면세점</a></li>
+									<li><a href="#">해외 이사화물</a></li>
+									<li><a href="#">간이 통관절차</a></li>
+									<li><a href="#">출입국 외환신고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">기업부담 완화제도</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">보세공장 제도</a></li>
+									<li><a href="#">관세환급</a></li>
+									<li><a href="#">관세분할납부 대상</a></li>
+									<li><a href="#">수입 부가세 납부유예제도</a></li>
+									<li><a href="#">중소기업 활력지원 프로그램</a></li>
+									<li><a href="#">해외통관 애로 해소</a></li>
+									<li><a href="#">관세조사 유예</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">납세협력 프로그램</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">보정 제도</a></li>
+									<li><a href="#">AEO 제도</a></li>
+									<li><a href="#">수입세액 정산제도</a></li>
+									<li><a href="#">납세도움정보</a></li>
+									<li><a href="#">특수관계과세과격사전심사(ACVA)</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">성실신고 이행확인</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세조사</a></li>
+									<li><a href="#">종합심사</a></li>
+									<li><a href="#">원산지 표시</a></li>
+									<li><a href="#">원산지 검증</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">성실신고 불이행</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">신고내용 오류</a></li>
+									<li><a href="#">불성실 신고</a></li>
+									<li><a href="#">수정수입세금계산서 발급 제한</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">납세자 권리보호</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세조사시 납세자 권리보호</a></li>
+									<li><a href="#">FTA 원산지검증 납세자 권리보호</a></li>
+									<li><a href="#">납세자 권리구제</a></li>
+									<li><a href="#">과세전 적부심사 청구</a></li>
+									<li><a href="#">사후 구제절차</a></li>
+									<li><a href="#">관세 종합상담</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">기타 행정</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">외국환거래</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">알림·소식</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">공지사항</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보도자료</a></li>
+									<li><a href="#">팩트체크</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">공고공시</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세청 공고</a></li>
+									<li><a href="#">보세판매장 공고</a></li>
+									<li><a href="#">행동규칙 행정예고</a></li>
+									<li><a href="#">공매공고</a></li>
+									<li><a href="#">공시 송달방</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">홍보마당</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">해외직구 여기로</a></li>
+									<li><a href="#">인포그래픽</a></li>
+									<li><a href="#">쉽게보는 품목분류</a></li>
+									<li><a href="#">관우지</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">국제기구 현황 및 활동</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">세계무역기구(WTO)</a></li>
+									<li><a href="#">세계관세기구(WCO)</a></li>
+									<li><a href="#">아시아 태평양 경제협력체(APEC)</a></li>
+									<li><a href="#">동남아시아 국가연합(ASEAN)</a></li>
+									<li><a href="#">아시아 유럽 정상회의(ASEM)</a></li>
+									<li><a href="#">관세행정관련 국제협약</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">통합 자료실</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세용어 사전</a></li>
+									<li><a href="#">민원업무 편람</a></li>
+									<li><a href="#">관세행정 상담 사례집</a></li>
+									<li><a href="#">환전영업자</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">국민참여</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">참여광장</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">혁신광장(제안등록)</a></li>
+									<li><a href="#">일자리창출 계획서</a></li>
+									<li><a href="#">국민 신문고</a></li>
+									<li><a href="#">규제개혁 신문고</a></li>
+									<li><a href="#">칭찬합시다</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">신고마당</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">밀수 신고</a></li>
+									<li><a href="#">예산낭비 신고</a></li>
+									<li><a href="#">체납자 은닉재산 신고센터</a></li>
+									<li><a href="#">원산지표시 및 유통이력 위반신고</a></li>
+									<li><a href="#">부정부패 신고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">정책참여</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">정책토론</a></li>
+									<li><a href="#">전자 공청회</a></li>
+									<li><a href="#">설문조사</a></li>
+									<li><a href="#">국민 생각함</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">적극행정</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">적극행정과 소극행정</a></li>
+									<li><a href="#">적극행정 추진방안</a></li>
+									<li><a href="#">적극행정 국민추천</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">관세청소개</a>
+						<ul class="gnb_depth1">
+							<li>
+								<a href="#">관세청 소개</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">미션과 비전</a></li>
+									<li><a href="#">핵심가치 및 행동규범</a></li>
+									<li><a href="#">설립목적 및 기능</a></li>
+									<li><a href="#">관세청 상징</a></li>
+									<li><a href="#">연혁</a></li>
+									<li><a href="#">관세행정 서비스 헌장</a></li>
+									<li><a href="#">관세청 공무원 행동강령</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">청차장 소개</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">청장 소개</a></li>
+									<li><a href="#">차장 소개</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">조직 및 직원안내</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">관세청 조직도</a></li>
+									<li><a href="#">세관조직 안내</a></li>
+									<li><a href="#">직원 안내</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">채용 정보</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">채용 정보</a></li>
+									<li><a href="#">관세공무원의 역할</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">관련 기관안내</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">정부기관</a></li>
+									<li><a href="#">유관기관</a></li>
+									<li><a href="#">외국관세</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">찾아오시는 길</a>
+								<ul class="gnb_depth2">
+									<li><a href="#">약도</a></li>
+									<li><a href="#">청사 안내도</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#" class="sitemap">
+					<span></span>
+				</a>
+			</div>
+		</nav>
+		<!-- 메뉴 끝 -->
+	</header>
+	<!-- //header 끝 -->
+
+
+	<!-- article 메인 시작 -->
+	<article id="article">
+		<h2 class="ir_so">메인 컨텐츠</h2>
+		<div class="container clearfix">
+			<!-- banner_box1 시작 -->
+			<section class="banner_box1">
+				<h3 class="ir_so">정책 안내</h3>
+				<div class="slick-container">
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_1.png" alt="관세청 개청 50주년 기념 엠블럼, 슬로건 공모전">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_2.png" alt="보건용 마스크 통관절차 안내">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_3.png" alt="코로나 바이러스 확산 위기 극복을 위한 중국의 지역별 현지 동향">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner1/img_ban1_4.png" alt="코로나 바이러스 정보 확인">
+						</a>
+					</div>
+				</div>
+				<div class="control-btn">
+					<a href="#" class="sl_stop"></a>
+					<a href="#" class="sl_start"></a>
+				</div>
+				<div class="slick-count">
+					<span class="cur_page">0</span>
+					<span class="slash">/</span>
+					<span class="tot_page">0</span>
+				</div>
+			</section>
+			<!-- //banner_box1 끝 -->
+
+			<!-- service 시작 -->
+			<section class="service_box">
+				<h3>주요 서비스</h3>
+					<ul>
+						<li class="public_tab active">
+							<h4> 
+								<a href="#"> 일반인 <span> </span> </a>
+							</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_01.png" alt="개인통관 고유부호발급">
+										</p>
+										<span>개인통관 고유부호발급</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_08.png" alt="휴대품통관 진행정보">
+										</p>
+										<span>휴대품통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_03.png" alt="여행자 분실물검색">
+										</p>
+										<span>여행자 분실물검색</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_02.png" alt="여행자 휴대품통관FAQ">
+										</p>
+										<span>여행자 휴대품통관FAQ</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_09.png" alt="우편물통관 진행정보">
+										</p>
+										<span>우편물통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_04.png" alt="예상세액 조회">
+										</p>
+										<span>예상세액 조회</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_10.png" alt="해외직구 여기로">
+										</p>
+										<span>해외직구 여기로</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_05.png" alt="해외 이사화물">
+										</p>
+										<span>해외 이사화물</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_06.png" alt="간이통관 절차">
+										</p>
+										<span>간이통관 절차</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link01_11.png" alt="공매공고">
+										</p>
+										<span>공매공고</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="licensee_tab">
+							<h4> 
+								<a href="#"> 사업자 <span> </span> </a> 
+							</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_01.png" alt="통관 고유부호">
+										</p>
+										<span>통관 고유부호</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_02.png" alt="수입화물통관 진행정보">
+										</p>
+										<span>수입화물통관 진행정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_03.png" alt="수입세금 계산서">
+										</p>
+										<span>수입세금 계산서</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_04.png" alt="수출 이행내역">
+										</p>
+										<span>수출 이행내역</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_05.png" alt="원산지 증명서발급">
+										</p>
+										<span>원산지 증명서발급</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_06.png" alt="보세 운송차량">
+										</p>
+										<span>보세 운송차량</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_07.png" alt="출항 허가정보">
+										</p>
+										<span>출항 허가정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_08.png" alt="상표권세관 신고정보">
+										</p>
+										<span>상표권세관 신고정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_09.png" alt="납세 도움정보">
+										</p>
+										<span>납세 도움정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>
+											<img src="assets/img/icons/m_link02_10.png" alt="세계HS 정보">
+										</p>
+										<span>세계HS 정보</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+			</section>
+			<!-- //service 끝 -->
+
+
+			<!-- notice_box 공지 시작 -->
+			<section class="notice_box">
+				<h3 class="ir_so"> 공지사항 </h3>
+				<ul class="clearfix">
+					<li class="active">
+						<h4 class="notice_title1">
+							<a href="#">전체</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">2020년도 인천세관 제2회 공무직 근로자(조리) 채용시험 서류전형 합격자 및 면접시험 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">중앙관세분석소 일반임기제(영문교열사) 채용 최종 합격자 공고 및 채용후보자 등록 안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">“정부가 보건용 아닌 패션 마스크까지 수출 막는다”는 주장은 사실이 아닙니다 </a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년 관세청 일반임기제공무원(변호사 관세소송 분야) 경력경쟁채용 서류전형 합격자 및 면접장소 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년도 관세청 일반임기제공무원(무역통계 관리) 경력경쟁채용시험 최종합격자 공고 및 채용후보자 등록안내</a>
+								<em>2020.03.09</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4 class="notice_title2">
+							<a href="#">공지&middot;<br>공고</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">2020년도 인천세관 제2회 공무직 근로자(조리) 채용시험 서류전형 합격자 및 면접시험 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">중앙관세분석소 일반임기제(영문교열사) 채용 최종 합격자 공고 및 채용후보자 등록 안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년 관세청 일반임기제공무원(변호사 관세소송 분야) 경력경쟁채용 서류전형 합격자 및 면접장소 공고</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">2020년도 관세청 일반임기제공무원(무역통계 관리) 경력경쟁채용시험 최종합격자 공고 및 채용후보자 등록안내</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">보건용·수술용 마스크 반출 금지 안내문 (개정3.6)(우편,특송,휴대품)</a>
+								<em>2020.03.05</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4 class="notice_title3">
+							<a href="#">보도<br>자료</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">관세청, “성실 납세에 감사드립니다”</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">관세청, 2020년 관세사 제1차 시험일정 연기</a>
+								<em>2020.03.03</em>
+							</li>
+							<li>
+								<a href="#">1인 기업도 수출하도록 도와드립니다</a>
+								<em>2020.03.02</em>
+							</li>
+							<li>
+								<a href="#">AEO 인증기업, 2019년 한해 3,858억원 경제적 혜택 봤다</a>
+								<em>2020.03.02</em>
+							</li>
+							<li>
+								<a href="#">2월 수출입 현황(잠정치)</a>
+								<em>2020.03.01</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4 class="notice_title4">
+							<a href="#">팩트<br>체크</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">“정부가 보건용 아닌 패션 마스크까지 수출 막는다”는 주장은 사실이 아닙니다</a>
+								<em>2020.03.09</em>
+							</li>
+							<li>
+								<a href="#">“52개국 FTA 맺고도...1분기 수출 관세혜택 19% 그쳐” 보도(2019.5.9, 머니투데이)는 오해의 소지가 있습니다.</a>
+								<em>2019.05.10</em>
+							</li>
+							<li>
+								<a href="#">관세청은 지난해‘북한산 석탄의 불법수입 및 대금지급’을 철저히 수사했습니다(TV조선(5.3) 보도에 대한 해명)</a>
+								<em>2019.05.07</em>
+							</li>
+							<li>
+								<a href="#">관세청 밀수단속 포상금, 이달의 관세인 등 지급한 사실이 없습니다.(4.22 한국일보)</a>
+								<em>2019.04.22</em>
+							</li>
+							<li>
+								<a href="#">“북한 전역 생산품 한국산 인정 추진” 언론보도(‘19.4.13, 동아일보, 헤럴드경제 등)</a>
+								<em>2019.04.14</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4 class="notice_title5">
+							<a href="#">행정<br>예고</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">보세사제도 운영에 관한 고시(제출기한:2020.03.25. 까지)</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">수입물품 과세가격 결정에 관한 고시(제출기한:2020.02.24. 까지)</a>
+								<em>2020.02.20</em>
+							</li>
+							<li>
+								<a href="#">수출입 안전관리 우수업체 공인심사 운영에 관한 훈령 폐지 행정예고(제출기한:2020.02.03. 까지)</a>
+								<em>2020.02.03</em>
+							</li>
+							<li>
+								<a href="#">종합심사 운영에 관한 훈령</a>
+								<em>2020.02.03</em>
+							</li>
+							<li>
+								<a href="#">실험실 안전환경 조성에 관한 훈령(제출기한:2020.02.07. 까지)</a>
+								<em>2020.02.03</em>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4 class="notice_title6">
+							<a href="#">최신<br>법령</a>
+						</h4>
+						<ul>
+							<li>
+								<a href="#">검역법</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">감염병의 예방 및 관리에 관한 법률 시행규칙</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">감염병의 예방 및 관리에 관한 법률(감염병예방법)</a>
+								<em>2020.03.04</em>
+							</li>
+							<li>
+								<a href="#">마약류 관리에 관한 법률 시행령</a>
+								<em>2020.03.03</em>
+							</li>
+							<li>
+								<a href="#">약사법 시행령</a>
+								<em>2020.03.03</em>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!-- //notice_box 공지 끝 -->
+
+			
+			<!-- banner_box2 시작 -->
+			<section class="banner_box2">
+				<h3 class="ir_so"> 관세청 배너 박스 </h3>
+				<div class="slick-container2">
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_1.png" alt="보건용 마스크, 손소독제 매점매석 행위 신고센터 운영">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_2.png" alt="공공분야 갑질 근절을 위한 가이드라인">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_3.png" alt="양심도 지키고 주머니도 지키고">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_4.png" alt="쉽게보는 품목분류">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_5.png" alt="사회 문제 챌린지">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_6.png" alt="2020년 관세청 업무계획">
+						</a>
+					</div>
+					<div class="slick-slide">
+						<a href="#">
+							<img src="assets/img/banner2/img_ban2_7.png" alt="2020년 3월 3일 제54회 납세자의 날">
+						</a>
+					</div>
+				</div>
+				<div class="control-btn2">
+					<a href="#" class="sl_stop"></a>
+					<a href="#" class="sl_start"></a>
+				</div>
+				<div class="slick-count2">
+					<span class="cur_page">0</span>
+					<span class="slash">/</span>
+					<span class="tot_page">0</span>
+				</div>
+			</section>
+			<!-- banner_box2 끝 -->
+
+
+			<!-- info_box 시작 -->
+			<section class="info_box">
+				<h3 class="ir_so"> 통관 실적 / 관세 환율 정보</h3>
+				<ul>
+					<li class="info_record_tab active">
+						<h4>
+							<a href="#">이달의 통관실적</a>
+						</h4>
+						<div>
+							<p class="info_std">수리일 기준(백만불, %(전년동기대비))</p>
+							<div class="info_cont_box1">
+								<p class="date">당월 <span>(2.1 - 2.29)</span></p>
+								<ul>
+									<li>
+										<em class="export">수출</em>
+										<span>41,262</span>
+										<strong>4.5</strong>
+									</li>
+									<li>
+										<em class="import">수입</em>
+										<span>37,147</span>
+										<strong>1.4</strong>
+									</li>
+								</ul>
+							</div>
+							<div class="info_cont_box2">
+							<p class="date">연간 <span>(1.1 - 2.29)</span></p>
+								<ul>
+									<li>
+										<em class="export">수출</em>
+										<span>84,522</span>
+										<strong>-1.3</strong>
+									</li>
+									<li>
+										<em class="import">수입</em>
+										<span>79,872</span>
+										<strong>-2.4</strong>
+									</li>
+								</ul>
+							</div>
+							<p class="info_std">조업일수[(’19) 19일,(’20) 22.5일]</p>
+						</div>
+						<a class="info_more" href="#">통관실적 더보기</a>
+					</li>
+					<li class="info_rate_tab">
+						<h4>
+							<a href="#">관세환율정보</a>
+						</h4>
+						<div>
+							<div>
+								<div>
+									<p class="late_title">미국(USD)</p>
+									<p>
+										<em class="export">수출</em> <strong>1184.13</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>1207.23</strong>
+									</p>
+									
+								</div>
+								<div class="pl20">
+									<p class="late_title">일본(JPY)</p>
+									<p>
+										<em class="export">수출</em> <strong>11.0386</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>11.2548</strong>
+									</p>
+								</div>
+							</div>
+							<div>
+								<div class="vtc-btm">
+									<p class="late_title">유럽(EUR)</p>
+									<p>
+										<em class="export">수출</em> <strong>1320.2</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>1346.68</strong>
+									</p>
+								</div>
+								<div class="vtc-btm pl20">
+									<p class="late_title">중국(CNY)</p>
+									<p>
+										<em class="export">수출</em> <strong>169.83</strong>
+									</p>
+									<p>
+										<em class="import">수입</em> <strong>173.25</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+						<a class="info_more" href="#">관세환율 더보기</a>
+					</li>
+				</ul>
+				
+			</section>
+			<!-- //info_box 끝 -->
+
+		</div>
+	</article>
+	<!-- article 메인 끝 -->
+
+	<!-- return_box 시작 (하단 회색바) -->
+	<div class="return_box">
+		<div class="container">
+			<ul class="return_tell">
+				<li>
+					<a href="#"> 
+						<em> 고객지원센터 </em> 
+						<strong> 국번없이 125 </strong>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<em> 전자통관 시스템 </em>
+						<strong> 1544-1285 </strong>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="return_report">
+				<li>
+					<a href="#">
+						<span>밀수신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>예산낭비신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>원산지 유통이력 위반신고</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>은닉재산 신고</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>	
+	</div>
+	<!-- return_box 끝 -->
+
+	<!-- site_box 사이트 링크 시작 -->
+	<div class="site_box">
+		<div class="container">
+			<div class="slick-container3">
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+						광화문1번가
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							민원 24
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							행복드림 열린소비자포털
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							당신의 건강을 위협합니다.
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							생활법령정보
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							이제 변호사를 통해서 공익신고가 가능합니다.
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							청렴포털
+						</span>
+					</a>
+				</div>
+				<div class="slick-slide">
+					<a href="#">
+						<span>
+							나라지표
+						</span>
+					</a>
+				</div>	
+			</div>
+			<div class="control-btn3">
+				<a href="#" class="sl_stop"></a>
+				<a href="#" class="sl_start"></a>
+			</div>
+			<a href="#" class="site_list"></a>
+		</div>	
+	</div>
+	<!-- site_box 끝 -->
+
+	
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer_site">
+			<div class="container">
+				<ul class="footer_info_link clearfix">
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">뷰어프로그램</a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#" class="red">개인정보처리방침</a></li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">고객만족도조사</a></li>
+				</ul>
+				<ul class="footer_menu clearfix">
+					<li>
+						<a href="#">패밀리 사이트
+							<span class="plus_btn"></span>
+						</a>
+						<div class="family">
+							<ul>
+								<li>
+									<a href="#">UNI-PASS전자통관</a>
+								</li>
+								<li>
+									<a href="#">해외통관지원센터</a>
+								</li>
+								<li>
+									<a href="#">고객지원센터</a>
+								</li>
+								<li>
+									<a href="#">FTA 포털</a>
+								</li>
+								<li>
+									<a href="#">수출입무역통계</a>
+								</li>
+								<li>
+									<a href="#">관세법령정보포털</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">산하 세관
+							<span class="plus_btn"></span>
+						</a>
+						<div class="customs">
+							<ul>
+								<li>
+									<a href="#">인천본부세관</a>
+									<ul>
+										<li><a href="#">김포공항세관</a></li>
+										<li><a href="#">인천공항국제우편세관</a></li>
+										<li><a href="#">수원세관</a></li>
+										<li><a href="#">안산세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">서울본부세관</a>
+									<ul>
+										<li><a href="#">안양세관</a></li>
+										<li><a href="#">천안세관</a></li>
+										<li><a href="#">청주세관</a></li>
+										<li><a href="#">성남세관</a></li>
+										<li><a href="#">파주세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">부산본부세관</a>
+									<ul>
+										<li><a href="#">김해공항세관</a></li>
+										<li><a href="#">양산세관</a></li>
+										<li><a href="#">용당세관</a></li>
+										<li><a href="#">창원세관</a></li>
+										<li><a href="#">마산세관</a></li>
+										<li><a href="#">경남남부세관</a></li>
+										<li><a href="#">경남서부세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">대구본부세관</a>
+									<ul>
+										<li><a href="#">울산세관</a></li>
+										<li><a href="#">구미세관</a></li>
+										<li><a href="#">포항세관</a></li>
+										<li><a href="#">속초세관</a></li>
+										<li><a href="#">동해세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">광주본부세관</a>
+									<ul>
+										<li><a href="#">광양세관</a></li>
+										<li><a href="#">여수세관</a></li>
+										<li><a href="#">목포세관</a></li>
+										<li><a href="#">대전세관</a></li>
+										<li><a href="#">군산세관</a></li>
+										<li><a href="#">제주세관</a></li>
+										<li><a href="#">전주세관</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">평택세관</a>
+								</li>
+								<li>
+									<a href="#">중앙관세분석소</a>
+								</li>
+								<li>
+									<a href="#">관세평가분류원</a>
+								</li>
+								<li>
+									<a href="#">관세국경관리연수원</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<address class="address">
+			<div class="container clearfix">
+				<em class="footer_logo">
+					<img src="assets/img/f_logo.png" alt="관세청">
+				</em>
+				<p class="post">
+					<span>(35208) 대전광역시 서구 청사로 189 정부대전청사 1동</span>
+					<span>홈페이지 문의 1544-1285</span>
+				</p>
+				<p class="copyright">
+					Copyright©Korea Customs Service. All Rights Reserved.
+				</p>
+			</div>
+		</address>
+
+		<button id="top_btn"></button>
+	</footer>
+	<!-- //footer -->
+
+
+	<!-- script -->
+	<script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/mySlick.js"></script>
+
+
+</body>
+</html>
